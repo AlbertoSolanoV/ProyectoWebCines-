@@ -1,0 +1,44 @@
+.contact_container {
+  border-style: solid;
+  border-color: #000000;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+.form_head {
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.item_head {
+  flex-direction: column;
+}
+
+.input_sm {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-left: 5px;
+  width: 300px;
+  height: 50px;
+}
+
+.input_lg {
+  height: 116px;
+  width: 757px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-left: 5px;
+}
+
+.btn_contenedor {
+  text-align: center;
+}
+
+.btn_contact {
+  text-align: center;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+}

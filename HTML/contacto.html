@@ -7,9 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
   <!--Link de css para el css-->
   <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
-  <link rel="stylesheet" type="text/css" href="../CSS/stylelogin.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/stylecontacto.css">
 
-  <title>Inicio de Sesion</title>
+  <title>Contactanos</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
       <img src="../IMG/LogoEmpresa.png" class="logo">
     </div>
     <div class="login flex">
-      <a href="perfil.html" class="menu_item login">Ingresar</a>
+      <a href="login.html" class="menu_item login">Ingresar</a>
     </div>
     <div class="flex_70 menu">
       <a href="../index.html" class="menu_item">Inicio</a>
@@ -26,27 +26,38 @@
       <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
     </div>
   </div>
-  <!--Seccion de Login-->
-  <div class="login_container">
-    <h1 class="titulo">Inicio de Sesión</h1>
+  <!--Contenido-->
+  <div class="contact_container">
+    <h1 class="titulo">Contactanos</h1>
     <form action="#" method="post">
-      <div class="form_email">
-        <label for="username" class="lb_login texto">Correo Electrónico</label>
-        <input type="text" class="form_login" placeholder="Email" id="correoUser">
-        <label for="password" class="lb_login texto">Contraseña</label>
-        <input type="password" class="form_login" placeholder="Su contraseña" id="password">
+      <div class="form_head flex">
+        <div class="item_head flex">
+          <label for="username" class=" texto">Nombre </label>
+          <input type="text" class="input_sm" placeholder="Su nombre" id="nombreUser">
+        </div>
+        <div class="item_head flex">
+          <label for="username" class=" texto">Correo Electrónico</label>
+          <input type="text" class="input_sm" placeholder="Email" id="correoUser">
+        </div>
       </div>
-      <div class="login_info">
-        <a href="#" class="login_info_texto">Recuperar Contraseña</a>
-        <a href="#" class="login_info_texto">Registrarse</a>
+      <div class="form_head flex">
+        <div class="item_head flex">
+          <label for="username" class=" texto">Tema </label>
+          <input type="text" class="input_sm" placeholder="Tema a comunicar" id="temaContact">
+        </div>
+      </div>
+      <div class="form_head flex">
+        <div class="item_head flex">
+          <label for="username" class="texto">Mensaje </label>
+          <textarea name="mensaje" id="mensajeComunicar" cols="30" rows="15" placeholder="Su mensaje"
+            class="input_lg"></textarea>
+        </div>
       </div>
       <div class="btn_contenedor">
-        <input type="submit" value="Acceder" class="btn_login">
+        <input type="submit" value="Enviar" class="btn_contact">
       </div>
     </form>
-
   </div>
-
   <!--Seccion de Footer-->
   <div class="footer flex ">
     <div class="flex-33 ">
@@ -59,7 +70,6 @@
       <a href="contacto.html" class="footer_item">Contacto</a>
     </div>
   </div>
-
 </body>
 
 </html>
