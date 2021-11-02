@@ -1,0 +1,14 @@
+.cine {
+  justify-content: space-between;
+  margin: 15px;
+  flex-wrap: wrap;
+}
+
+.img_cine {
+  width: 350px;
+  height: 200px;
+}
+
+.info_cine{
+  text-align: center;
+}

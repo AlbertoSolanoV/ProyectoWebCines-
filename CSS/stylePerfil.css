@@ -1,0 +1,122 @@
+.body_iframe {
+  margin: 10px;
+}
+
+.menu_perfil {
+  background-color: #1e5bbb;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+}
+
+.menu_perfil_item {
+  padding: 20px;
+}
+
+.flex-30 {
+  flex: 0 0 30%;
+}
+
+.flex-70 {
+  flex: 0 0 70%;
+}
+
+.info_perfil {
+  margin: 5%;
+  width: 94%;
+  height: auto;
+}
+
+
+.contenido_usuario {
+  flex-direction: column;
+}
+
+.contenido_user_info {
+  flex-direction: row;
+  align-items: center;
+}
+
+.correo_input {
+  height: 30px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.boton {
+  margin: 10px;
+  font-size: 15;
+  border-radius: 8px;
+}
+
+.tabla_contenedor {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.tabla_centro {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.titulo_tabla {
+  text-align: center;
+}
+
+.tabla_tarjetas {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  padding: 10px;
+}
+
+.contenedor_agregarTarjeta {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.seccion_agregar {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.input_numero {
+  height: 30px;
+  width: 300px;
+}
+
+.input_vencimiento {
+  height: 30px;
+  width: 50px;
+}
+
+.vencimiento_inputs {
+  flex-direction: row;
+}
+
+.texto_entre {
+  padding: 5px;
+  margin-top: -4px;
+  font-size: 30;
+}
+.input_cod{
+  height: 30px;
+  width: 60px;
+}
+.btn_cancel{
+  border-radius: 8%;
+  padding: 10px;
+  margin: 20px;
+  height: 80px;
+}
+.btn_add{
+  border-radius: 8%;
+  padding: 10px;
+  margin: 20px;
+  height: 80px;
+}

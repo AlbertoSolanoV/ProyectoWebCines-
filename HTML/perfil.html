@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <!--Links de google fonts tipo de letra-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <!--Link de bootstrap para carousel-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!--Link de css para el css-->
+  <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/stylePerfil.css">
+
+  <title>Perfil</title>
+</head>
+
+<body>
+  <div class="header flex">
+    <div class="flex_30">
+      <img src="../IMG/LogoEmpresa.png" class="logo">
+    </div>
+    <div class="login flex">
+      <a href="" class="menu_item login">Ingresar</a>
+    </div>
+    <div class="flex_70 menu">
+      <a href="../index.html" class="menu_item">Inicio</a>
+      <a href="cines.html" class="menu_item">Cines</a>
+      <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="menu_perfil flex-30">
+      <a href="Perfil.html" class="texto menu_perfil_item" target="iframe_usuario">Información</a>
+      <a href="perfil_metodoPago.html" class="texto menu_perfil_item" target="iframe_usuario">Método de Pago</a>
+    </div>
+    <div class="info_perfil flex-70">
+      <div class="contenido_usuario flex">
+        <div class="contenido_user_info flex">
+          <p class="texto">Nombre: </p>
+          <p class="texto">""Nombre""</p>
+        </div>
+        <div class="contenido_user_info flex">
+          <p class="texto">Apellidos: </p>
+          <p class="texto">""Apellidos""</p>
+        </div>
+        <div class="contenido_user_info flex">
+          <p class="texto">Edad: </p>
+          <p class="texto">""Edad""</p>
+        </div>
+        <div class="contenido_user_info flex">
+          <p class="texto">Correo: </p>
+          <input class="correo_input" type="email" name="correo_user" id="Correo_User">
+          <button class="boton">Modificar Correo</button>
+        </div>
+        <div class="contenido_user_info flex">
+          <p class="texto">Contraseña: </p>
+          <button class="boton">Modificar Contraseña</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Seccion de Footer-->
+  <div class="footer flex ">
+    <div class="flex-33 ">
+      <a href="#" class="footer_item">Nosotros</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="#" class="footer_item">Condiciones de uso y politicas</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="#" class="footer_item">Contacto</a>
+    </div>
+  </div>
+  <!--Scripts para el Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+  </script>
+  <script src="../JS/Pefil.js"></script>
+</body>
+
+</html>

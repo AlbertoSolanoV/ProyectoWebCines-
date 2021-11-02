@@ -1,0 +1,40 @@
+.login_container {
+  border-style: solid;
+  border-color: #000000;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  
+}
+
+.form_email {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.lb_login {
+  text-align: left;
+}
+
+.form_login {
+  width: 500px;
+  margin: 10px;
+}
+
+.login_info {
+  padding: 10px;
+  text-align: center;
+}
+.login_info_texto{
+  margin-left: 30px;
+}
+.btn_contenedor{
+  text-align: center;
+}
+.btn_login{
+  text-align: center;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+}
