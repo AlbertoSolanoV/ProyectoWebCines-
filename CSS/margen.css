@@ -1,90 +1,80 @@
-.tableUno { 
-border-collapse: collapse;
-margin-bottom: 5%;
-
-} 
-td, th /* Poner borde en td y th */ 
-{ 
-    border: 1px solid black; 
+.tableUno {
+    border-collapse: collapse;
+    margin-bottom: 5%;
+    
 }
 
-ul{
+td,
+th
+
+/* Poner borde en td y th */
+    {
+    border: 1px solid black;
+}
+
+ul {
     list-style: none;
     padding-left: 25%;
-  }
+}
 
-  
 
-  #menuAdmin li>a{
-    
-      
-      color: black;
-      padding: 10px;
-  display: block;
-  border: 1px solid black; 
-  margin-bottom: 3%;
-  opacity: 0.8;
- 
-  
 
-  }
+#menuAdmin li>a {
+    color: black;
+    padding: 10px;
+    display: block;
+    border: 1px solid black;
+    margin-bottom: 3%;
+    opacity: 0.8;
+}
 
-  html {
+html {
     height: 100%;
 }
 
 
-
-.capaDos{
-    padding-top: 7%;
-    width: 25%;
-    padding-left: 7%;
-    display: block;
-    
-    
-    
-    float: left;
+.capaDos {
+    align-items: center;
 }
 
-.capaTres{
-    float: right;
-    padding-top: 7%;
-
-    justify-content: center;
-    
-    width: 900px;
-    padding-right: 5%;
-    
-   
+.capaTres {
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.capaUno{
+.capaUno {
     width: 30%;
     display: block;
 }
 
-.tituloUno{
+.tituloUno {
     margin-bottom: 4%;
     padding-left: 16%;
 
 }
 
-.tituloDos{
+.tituloDos {
     margin-bottom: 4%;
     padding-left: 8%;
 }
 
-.editar {color: rgb(rgb(155, 10, 10));
-     cursor:pointer;}
+.editar {
+    color: rgb(rgb(155, 10, 10));
+    cursor: pointer;
+}
 
- 
+#contenedorForm {
+    margin-left: 45px;
+    font-size: 12px;
+}
 
-#contenedorForm {margin-left: 45px; font-size:12px;}
+.boton {
+    color: black;
+    padding: 5px;
+    margin: 10px;
 
- 
-
-.boton {   color: black; padding: 5px; margin: 10px;
-
-  background-color: #b9c9fe;
-  font-weight: bold; }
-
+    background-color: #b9c9fe;
+    font-weight: bold;
+}

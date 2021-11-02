@@ -43,6 +43,13 @@ p {
   flex: 0 0 30%;
 }
 
+.flex-20 {
+  flex: 0 0 20%;
+}
+.flex-80 {
+  flex: 0 0 80%;
+}
+
 .header {
   background-color: var(--backgorundC-header);
 }
