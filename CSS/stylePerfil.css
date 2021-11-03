@@ -6,7 +6,7 @@
   background-color: #1e5bbb;
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 5%;
 
 }
 
@@ -19,7 +19,7 @@
 }
 
 .flex-70 {
-  flex: 0 0 70%;
+  flex: 0 0 60%;
 }
 
 .info_perfil {

@@ -1,9 +1,7 @@
 .tableUno {
     border-collapse: collapse;
     margin-bottom: 5%;
-    
 }
-
 td,
 th
 
@@ -16,9 +14,6 @@ ul {
     list-style: none;
     padding-left: 25%;
 }
-
-
-
 #menuAdmin li>a {
     color: black;
     padding: 10px;
