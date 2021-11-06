@@ -1,0 +1,23 @@
+.contenedor {
+    margin: auto;
+    width: 60%;
+    padding: 15px;
+}
+
+.formCont {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.boton {
+    text-align: center;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+}
+
+.inputSm {
+    width: 300px;
+    height: 30px;
+}
