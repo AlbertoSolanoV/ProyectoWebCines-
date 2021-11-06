@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crear Usuario por administrador</title>
+    <!--Link de css para el css-->
+    <link rel="stylesheet" type="text/css" href="../CSS/styleCrearA.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+    <!--Links de google fonts tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header flex">
+        <div class="flex_30">
+            <img src="../IMG/LogoEmpresa.png" class="logo">
+        </div>
+        <div class="login flex">
+            <a href="perfil.html" class="menu_item login">Ingresar</a>
+        </div>
+        <div class="flex_70 menu">
+            <a href="../index.html" class="menu_item">Inicio</a>
+            <a href="cines.html" class="menu_item">Cines</a>
+            <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
+        </div>
+    </div>
+
+
+    <div class="contenedor">
+        <h3 class="titulo">Crear Uusario por el administrador</h3>
+        <form class="formCont flex" action="">
+            <div class="itemContenedor">
+                <label class="texto"> Cedula</label>
+                <input class="inputSm" type="text" required />
+            </div>
+
+            <div class="itemContenedor">
+                <label class="texto">Nombre</label>
+                <input class="inputSm" type="text" required />
+            </div>
+            <div class="itemContenedor">
+                <label class="texto">Correo Electronico</label>
+                <input class="inputSm" type="email" required />
+            </div>
+            <div class="itemContenedor">
+                <label class="texto">Fecha de nacimiento</label>
+                <input class="inputSm" type="date" required />
+            </div>
+            <p class="texto"> <strong> Seleccione el rol del nuevo usuario </strong> </p>
+
+            <div class="itemContenedor flex contenedor_tipo">
+                <div class="contenedor_tipo">
+                    <input type="radio" name="usuario">
+                    <labe class="texto">Usuario cliente</label>
+                </div>
+                <div class="contenedor_tipo">
+                    <input type="radio" name="usuario">
+                    <label class="texto">Usuario Jefe de Soporte</label>
+                </div>
+
+
+
+            </div>
+            <div class="itemContenedor contenedorLista flex">
+
+                <select name="Cadena de cines">
+                    <option disabled hidden selected>Cadena de cines </option>
+                    <option class="texto">CCM Cinemas</option>
+                    <option class="texto">Cinemark</option>
+                    <option class="texto">Cinepolis</option>
+                    <option class="texto">Nova Cinemas</option>
+                    <option class="texto">Citicinemas</option>
+                    <option class="texto">Magaly</option>
+                    <option class="texto">Multicinemas</option>
+
+                </select>
+            </div>
+
+            <div class="btn_contenedor itemContenedor flex">
+                <input class="texto btn_crear" type="submit" name="Enviar" value="Enviar" required />
+            </div>
+
+
+
+    </div>
+    <!--Seccion de Footer-->
+    <div class="footer flex ">
+        <div class="flex-33 ">
+            <a href="#" class="footer_item">Nosotros</a>
+        </div>
+        <div class="flex-33 ">
+            <a href="#" class="footer_item">Condiciones de uso y politicas</a>
+        </div>
+        <div class="flex-33 ">
+            <a href="contacto.html" class="footer_item">Contacto</a>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>

@@ -124,6 +124,7 @@ p {
   background-color: var(--backgroudC-footer);
   padding: 30px;
   text-align: center;
+  justify-content: space-around;
 }
 .footer_item{
   color: var(--color-letrafooter);
