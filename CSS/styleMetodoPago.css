@@ -1,0 +1,52 @@
+.contenedor_agregarTarjeta {
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.seccion_agregar {
+  flex-direction: column;
+  align-items: center;
+}
+.seccion_infoTarjeta {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.input_numero {
+  height: 30px;
+  width: 300px;
+}
+
+.input_vencimiento {
+  height: 30px;
+  width: 50px;
+}
+
+.vencimiento_inputs {
+  flex-direction: row;
+  margin: 10px;
+  margin-bottom: -10px;
+}
+
+.texto_entre {
+  padding: 5px;
+  margin-top: -4px;
+  font-size: 30;
+}
+.input_cod{
+  height: 30px;
+  width: 60px;
+  margin: 10px;
+}
+.btn_pagar{
+  border-radius: 8%;
+  padding: 10px;
+  margin: 20px;
+  height: 50px;
+  width: 100px;
+}
+.contenedor_agregarinfo{
+  justify-content: center;
+}
