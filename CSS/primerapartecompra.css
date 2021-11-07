@@ -1,0 +1,92 @@
+.spinner {
+    white-space: nowrap;
+}
+
+.decrese {
+    font-size: 1.2em;
+    border-radius: 30px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s linear;
+    zoom: 0%;
+}
+
+.increase {
+    border: #0b5ba1;
+    color: #0b5ba1;
+    font-size: 1.2em;
+    background: none;
+    border-radius: 30px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s linear;
+    zoom: 0%;
+}
+
+.tableheder {
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    font: inherit;
+    outline: none;
+}
+
+.espacio {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.table {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.edad {
+    padding-right: 30px;
+}
+
+.peliUnoInfo {
+    margin-bottom: 8%;
+
+}
+
+.horario {
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: rgb(170, 170, 170)
+}
+
+.infoDos {
+    float: left;
+    margin: 4%;
+    margin-top: 5%;
+}
+
+.content_header {
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.bordes {
+    border: 1px solid gray;
+}
+.btn{
+    margin: 20px;
+    text-align: center;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+}
+.boton{
+    text-align: center;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+}
