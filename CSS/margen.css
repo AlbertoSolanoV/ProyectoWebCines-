@@ -4,7 +4,6 @@
 }
 td,
 th
-
 /* Poner borde en td y th */
     {
     border: 1px solid black;
@@ -36,7 +35,7 @@ html {
   margin-top: 10px;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .capaUno {
