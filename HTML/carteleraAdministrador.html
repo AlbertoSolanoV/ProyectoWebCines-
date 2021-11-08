@@ -28,9 +28,9 @@
       <a href="" class="menu_item login">Ingresar</a>
     </div>
     <div class="flex_70 menu">
-      <a href="" class="menu_item">Inicio</a>
-      <a href="" class="menu_item">Cines</a>
-      <a href="" class="menu_item">Mis Boletos</a>
+      <a href="../index.html" class="menu_item">Inicio</a>
+      <a href="cines.html" class="menu_item">Cines</a>
+      <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
     </div>
   </div>
 
@@ -56,27 +56,27 @@
         <h1 class="titulo">Agregar pelicula</h1>
         <br>
         <br>
-        <label class="labelUno" for="">Nombre</label>
+        <label class="labelUno texto" for="">Nombre</label>
         <input class="inputUno" type="text">
-        <label class="labelDos" for="">Duracion</label>
+        <label class="labelDos texto" for="">Duracion</label>
         <input class="inputDos" type="number" min="1" value="1">
         <br>
         <br>
-        <label class="labelTres" for="">Categoria</label>
+        <label class="labelTres texto" for="">Categoria</label>
         <select name="Categorias" class="inputDos">
           <option disabled hidden selected>Categorias</option>
           <option class="texto">Acción</option>
           <option class="texto">Aventuras</option>
           <option class="texto">Ciencia Ficción</option>
           <option class="texto">Comedia</option>
-          <option class="texto">No- Ficción</option>
+          <option class="texto">No-Ficción</option>
           <option class="texto">Drama</option>
           <option class="texto">Fantasía</option>
           <option class="texto">Musical</option>
           <option class="texto">Suspense</option>
           <option class="texto">Terror</option>
         </select>
-        <label class="labelCinco" for="">Clasificacion</label>
+        <label class="labelCinco texto" for="">Clasificacion</label>
         <select name="Clasificacion" class="inputDos">
           <option disabled hidden selected>Clasificacion</option>
           <option class="texto">TP(general o Todo Público)</option>
@@ -88,11 +88,11 @@
         </select>
         <br>
         <br>
-        <label class="labelCuatro" for="">Imagen</label>
+        <label class="labelCuatro texto" for="">Imagen</label>
         <input class="inputCuatro" type="file">
         <br>
         <br>
-        <label for="" class="sinopsis">Sinopsis</label>
+        <label for="" class="sinopsis texto">Sinopsis</label>
         <textarea class="textArea" name="" id="" cols="30" rows="10"></textarea>
       </div>
 
@@ -101,52 +101,52 @@
         <br>
         <br>
         <div class="modCart">
-          <label for="">Buscar</label>
+          <label for="" class="texto">Buscar</label>
           <input type="text">
           <button>Buscar</button>
           <br>
           <br>
         </div>
-        <table class="tablaUno">
+        <table class="tabla">
 
           <tr>
-            <th><strong>Nombre</strong></th>
-            <th><strong>Categoria</strong></th>
-            <th><strong>Clasificacion</strong></th>
-            <th><strong>Duracion</strong></th>
-            <th><strong>Imagen</strong></th>
-            <th><strong>Tipo</strong></th>
-            <th><strong>Accion</strong></th>
+            <th class="texto"><strong>Nombre</strong></th>
+            <th class="texto"><strong>Categoria</strong></th>
+            <th class="texto"><strong>Clasificacion</strong></th>
+            <th class="texto"><strong>Duracion</strong></th>
+            <th class="texto"><strong>Imagen</strong></th>
+            <th class="texto"><strong>Tipo</strong></th>
+            <th class="texto"><strong>Accion</strong></th>
           </tr>
 
           <tr>
-            <td>100 annos de soledad</td>
-            <td>Drama</td>
-            <td>Todo Publico</td>
-            <td>107 min</td>
-            <td></td>
-            <td>2D</td>
-            <td><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
+            <td class="texto">100 annos de soledad</td>
+            <td class="texto">Drama</td>
+            <td class="texto">Todo Publico</td>
+            <td class="texto">107 min</td>
+            <td class="texto"></td>
+            <td class="texto">2D</td>
+            <td class="texto"><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
           </tr>
 
           <tr>
-            <td>Guardianes de la galaxia</td>
-            <td>Ficcion</td>
-            <td>Todo Publico</td>
-            <td>97 min</td>
-            <td></td>
-            <td>3D</td>
-            <td><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
+            <td class="texto">Guardianes de la galaxia</td>
+            <td class="texto">Ficcion</td>
+            <td class="texto">Todo Publico</td>
+            <td class="texto">97 min</td>
+            <td class="texto"></td>
+            <td class="texto">3D</td>
+            <td class="texto"><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
           </tr>
 
           <tr>
-            <td>Jocker</td>
-            <td>Accion</td>
-            <td>+15</td>
-            <td>84min</td>
-            <td></td>
-            <td>2D</td>
-            <td><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
+            <td class="texto">Jocker</td>
+            <td class="texto">Accion</td>
+            <td class="texto">+15</td>
+            <td class="texto">84min</td>
+            <td class="texto"></td>
+            <td class="texto">2D</td>
+            <td class="texto"><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
           </tr>
         </table>
         <br>
@@ -210,24 +210,24 @@
             <button type="button" class="btn" onclick="Agregar()"> Agrega</button>
             <button type="button" class="btn" onclick="Cancelar()"> Cancelar</button>
           </div>
-          <table class="tablaUno">
+          <table class="tabla">
 
             <tr>
-              <th><strong>Codigo</strong></th>
-              <th><strong>Pelicula</strong></th>
-              <th><strong>Horario</strong></th>
-              <th><strong>Sala</strong></th>
-              <th><strong>Dia</strong></th>
-              <th><strong>Accion</strong></th>
+              <th class="texto"><strong>Codigo</strong></th>
+              <th class="texto"><strong>Pelicula</strong></th>
+              <th class="texto"><strong>Horario</strong></th>
+              <th class="texto"><strong>Sala</strong></th>
+              <th class="texto"><strong>Dia</strong></th>
+              <th class="texto"><strong>Accion</strong></th>
             </tr>
 
             <tr>
-              <td>CA001</td>
-              <td>El Joker</td>
-              <td>18:20</td>
-              <td>Sala 1</td>
-              <td>05/11/2021</td>
-              <td><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
+              <td class="texto">CA001</td>
+              <td class="texto">El Joker</td>
+              <td class="texto">18:20</td>
+              <td class="texto">Sala 1</td>
+              <td class="texto">05/11/2021</td>
+              <td class="texto"><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
             </tr>
           </table>
         </div>
