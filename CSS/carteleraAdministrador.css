@@ -1,0 +1,215 @@
+.tableUno {
+    border-collapse: collapse;
+    margin-bottom: 5%;
+    padding: 20px;
+
+}
+
+td,
+th
+
+/* Poner borde en td y th */
+    {
+    border: 1px solid black;
+}
+
+ul {
+    list-style: none;
+    padding-left: 25%;
+}
+
+#menuAdmin li>a {
+    color: black;
+    padding: 10px;
+    display: block;
+    border: 1px solid black;
+    margin-bottom: 3%;
+    opacity: 0.8;
+}
+
+html {
+    height: 100%;
+}
+
+.capaDos {
+    padding-top: 7%;
+    width: 25%;
+    padding-left: 7%;
+    display: block;
+    float: left;
+}
+
+.capaTres {
+    flex-direction: column;
+    float: right;
+    padding-top: 7%;
+    justify-content: center;
+    width: 900px;
+    padding-right: 5%;
+}
+
+.capaUno {
+    width: 30%;
+    display: block;
+}
+
+.tituloUno {
+    margin-bottom: 4%;
+    padding-left: 16%;
+}
+
+.tituloDos {
+    margin-bottom: 7%;
+    padding-left: 8%;
+}
+
+.editar {
+    color: rgb(rgb(155, 10, 10));
+    cursor: pointer;
+}
+
+#contenedorForm {
+    margin-left: 45px;
+    font-size: 12px;
+}
+
+.boton {
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    background-color: #b9c9fe;
+    font-weight: bold;
+}
+
+/*Cartelera*/
+.tituloAgregar {
+    padding-left: 35%;
+}
+
+.primerForm {
+    padding-right: 10%;
+    width: 800px;
+    padding-left: 5%;
+    margin-bottom: 10px;
+}
+
+.pad {
+    padding-left: 6%;
+}
+
+/*modificar*/
+.modCart {
+    text-align: center;
+}
+
+.labelUno,
+.labelTres,
+.labelCinco,
+.labelDos,
+.labelCuatro,
+.labelSeis {
+    padding-left: 10%;
+}
+
+.inputUno {
+    margin-left: 4%;
+    width: 160px;
+}
+
+.inputTres {
+    margin-left: 2.5%;
+    width: 160px;
+}
+
+.inputCinco {
+    width: 160px;
+}
+
+.inputDos {
+    width: 160px;
+    margin-left: 1%;
+}
+
+.inputSeis {
+    width: 160px;
+    margin-left: 2.5%;
+}
+
+.sinopsis {
+    margin-left: 10%;
+}
+
+.textArea {
+    margin-left: 10%;
+    min-height: 60px;
+    max-height: 60px;
+}
+
+.Salas {
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+.Horarios {
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+
+.Calendario {
+
+    width: 300px;
+    height: 200px;
+    float: left;
+
+}
+
+.Caja {
+    
+    float: left;
+
+}
+
+.Botones {
+    margin: 10px;
+    float: left;
+}
+
+
+
+th,
+td,
+tr {
+    width: 5%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 0.3em;
+}
+
+.Contenedor {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    background-color: lightgray;
+    text-align: center;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+}
+.footcontent{
+    flex-direction: column;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+.medcontent{
+    flex-direction: row;
+
+}
