@@ -1,0 +1,64 @@
+#menuAdmin li>a {
+  color: black;
+  padding: 5px;
+  display: block;
+  border: 1px solid black;
+  margin-bottom: 3%;
+  opacity: 0.8;
+}
+
+.capaDos {
+  border-right: 1px solid black;
+  padding-right: 20px;
+  padding-top: 35px;
+}
+
+.item_admin {
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+.tabla {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-style: solid;
+}
+
+ul {
+  list-style: none;
+  padding-left: 25%;
+}
+
+.contenido {
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.seccionBusca {
+  flex-direction: row;
+}
+
+.btn {
+  margin: 10px;
+  text-align: center;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+}
+
+.inputMd {
+  width: 200px;
+  height: 30px;
+}
