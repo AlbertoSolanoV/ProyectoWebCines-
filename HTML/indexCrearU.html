@@ -5,76 +5,85 @@
     <title>Crear Usuario</title>
     <!--Link de css para el css-->
     <link rel="stylesheet" type="text/css" href="../CSS/styleCrearU.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/stylePrincipal.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
     <!--Links de google fonts tipo de letra-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
     <!--Link de bootstrap para carousel-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 </head>
 
 <body>
     <div class="header flex">
         <div class="flex_30">
-            <img src="../IMG/LogoEmpresa.png" class="logo">
+          <img src="../IMG/LogoEmpresa.png" class="logo">
         </div>
         <div class="login flex">
-            <a href="perfil.html" class="menu_item login">Ingresar</a>
+          <a href="perfil.html" class="menu_item login">Ingresar</a>
         </div>
         <div class="flex_70 menu">
-            <a href="../index.html" class="menu_item">Inicio</a>
-            <a href="cines.html" class="menu_item">Cines</a>
-            <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
+          <a href="../index.html" class="menu_item">Inicio</a>
+          <a href="cines.html" class="menu_item">Cines</a>
+          <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
         </div>
-    </div>
+      </div>
 
 
     <div class="contenedor">
         <h3 class="titulo">Crear Usario</h3>
 
         <form class="formCont flex" action="">
-
-            <div class="itemContenedor">
-                <label class="texto">Cedula</label>
-                <input class="inputSm" type="text" required />
+            <div class="formIzq">
+                <div class="itemContenedor">
+                    <label class="texto">Cedula</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Nombre</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Correo Electronico</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Fecha de nacimiento</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Contraseña</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Confirmar contraseña</label>
+                </div>
             </div>
 
 
-            <div class="itemContenedor">
-                <label class="texto">Nombre</label>
-                <input class="inputSm" type="text" required />
-            </div>
+            <div class="formDere">
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="date" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="password" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="password" required />
+                </div>
 
-            <div class="itemContenedor">
-                <label class="texto">Correo Electronico</label>
-                <input class="inputSm" type="email" required />
             </div>
-
-            <div class="itemContenedor">
-                <label class="texto">Fecha de nacimiento</label>
-                <input class="inputSm" type="date" required />
-            </div>
-
-            <div class="itemContenedor">
-                <label class="texto">Contraseña</label>
-                <input class="inputSm" type="password" required />
-            </div>
-
-            <div class="itemContenedor">
-                <label class="texto">Confirmar contraseña</label>
-                <input class="inputSm" type="password" required />
-            </div>
-
-            <div class="itemContenedor flex btn_contenedor">
-                <label ></label>
-                <input class="boton" type="submit" name "Enviar" value="Enviar" />
-            </div>
-
         </form>
-
+        <div class="itemContenedor flex btn_contenedor">
+            <input class="boton" type="submit" name "Enviar" value="Enviar" />
+        </div>
 
 
     </div>
@@ -82,19 +91,21 @@
     <!--Seccion de Footer-->
     <div class="footer flex ">
         <div class="flex-33 ">
-            <a href="#" class="footer_item">Nosotros</a>
+            <a href="indexNosotros.html" class="footer_item">Nosotros</a>
         </div>
         <div class="flex-33 ">
-            <a href="#" class="footer_item">Condiciones de uso y politicas</a>
+            <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
         </div>
         <div class="flex-33 ">
-            <a href="#" class="footer_item">Contacto</a>
+            <a href="contacto.html" class="footer_item">Contacto</a>
         </div>
     </div>
     <!--Scripts para el Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
     </script>
 
 </body>

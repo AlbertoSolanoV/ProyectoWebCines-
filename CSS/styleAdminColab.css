@@ -39,7 +39,10 @@ ul {
   list-style: none;
   padding-left: 25%;
 }
+th td i{
+  text-align: center;
 
+}
 .contenido {
   padding: 25px;
   align-items: center;

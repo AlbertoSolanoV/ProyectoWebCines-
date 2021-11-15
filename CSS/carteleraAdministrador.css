@@ -142,14 +142,12 @@ html {
 }
 
 .Salas {
-    width: 300px;
-    height: 200px;
+    margin: 10px;
     float: left;
 }
 
 .Horarios {
-    width: 500px;
-    height: 200px;
+    margin: 10px;
     float: left;
 }
 
@@ -174,23 +172,13 @@ html {
 
 
 
-th,
-td,
-tr {
-    width: 5%;
-    text-align: left;
-    vertical-align: top;
-    border: 1px solid #000;
-    border-collapse: collapse;
-}
-
 caption {
     padding: 0.3em;
 }
 
 .Contenedor {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 

@@ -2,9 +2,10 @@
   border-style: solid;
   border-color: #000000;
   margin: auto;
-  width: 60%;
+  width: 40%;
   padding: 10px;
-  
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .form_email {
@@ -19,7 +20,8 @@
 }
 
 .form_login {
-  width: 500px;
+  width: 250px;
+  height: 40px;
   margin: 10px;
 }
 
@@ -27,13 +29,16 @@
   padding: 10px;
   text-align: center;
 }
-.login_info_texto{
+
+.login_info_texto {
   margin-left: 30px;
 }
-.btn_contenedor{
+
+.btn_contenedor {
   text-align: center;
 }
-.btn_login{
+
+.btn_login {
   text-align: center;
   padding: .75rem 1.25rem;
   border-radius: 10rem;
