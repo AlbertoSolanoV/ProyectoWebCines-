@@ -14,6 +14,9 @@ div {
 
 body {
   margin: 0;
+  /*background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+*/
 }
 
 a {
@@ -46,6 +49,7 @@ p {
 .flex-20 {
   flex: 0 0 20%;
 }
+
 .flex-80 {
   flex: 0 0 80%;
 }
@@ -94,11 +98,13 @@ p {
   text-align: center;
   padding: 10px;
 }
-.texto{
+
+.texto {
   font-family: var(--tipo-letra);
   font-size: var(--tamano-texto);
   color: #000000;
 }
+
 .peliculas {
   justify-content: center;
   flex-wrap: wrap;
@@ -127,8 +133,9 @@ p {
   text-align: center;
   justify-content: space-around;
 }
-.footer_item{
+
+.footer_item {
   color: var(--color-letrafooter);
   font-family: var(--tipo-letra);
-  font-size: var(--tamano-texto);
+  font-size: 16;
 }

@@ -9,6 +9,8 @@
   <!--Link de css para el css-->
   <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
   <link rel="stylesheet" type="text/css" href="../CSS/styleAdminCadenaCines.css">
+    <!--Link de font awesome para los iconos-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <title>Administrador Cadenas Cines</title>
 
 
@@ -58,7 +60,7 @@
               <input type="file" name="" id="" class="">
             </div>
             <div class="entreItem">
-              <label for="" class="texto">Localizacion: </label>
+              <label for="" class="texto">Localización: </label>
               <input type="text" name="" id="" class="inputMd">
             </div>
             <div class="entreItem">
@@ -71,8 +73,9 @@
         <h1 class="titulo">Cadenas de Cines</h1>
         <table class="tabla">
           <tr>
+            <th class="texto">Código</th>
             <th class="texto">Nombre</th>
-            <th class="texto">Localizacion</th>
+            <th class="texto">Localización</th>
             <th class="texto">Logo</th>
             <th class="texto">Accion</th>
           </tr>
@@ -80,15 +83,16 @@
             <td class="texto">X</td>
             <td class="texto">X</td>
             <td class="texto">X</td>
-            <td class="texto">Modificar</td>
+            <td class="texto">X</td>
+            <td class="texto"><i class="fas fa-edit" onclick="modificarCadena(this)"></i></td>
           </tr>
         </table>
       </div>
       <div class="contenido">
         <h1 class="titulo">Eliminar Cadena de cine</h1>
         <form action="" method="post">
-          <label for="Codigo de cadena a eliminar" class="texto">Codigo de la cadena a eliminar</label>
-          <input type="text" name="CodCadenaElimianar" id="" class="inputMd" placeholder="Codigo de la cadena">
+          <label for="Codigo de cadena a eliminar" class="texto">Código de la cadena a eliminar</label>
+          <input type="text" name="CodCadenaElimianar" id="" class="inputMd">
           <button class="btn">Eliminar</button>
         </form>
       </div>

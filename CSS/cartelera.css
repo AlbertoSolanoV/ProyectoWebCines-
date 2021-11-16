@@ -19,7 +19,9 @@ ul {
 .flex-70 {
     flex: 0 0 50%;
 }
-
+.flex-70P {
+    flex: 0 0 70%;
+}
 .imgPelicula {
     width: 90%;
     padding: 10%;
@@ -60,4 +62,16 @@ ul {
     justify-content: center;
     text-align: justify;
 
+}
+.contenedorBuscadores{
+    /*position: fixed;
+    min-height: 120px;
+    width: 252px;
+    text-align: center;
+    word-wrap: break-word;*/
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    border-right: 1px solid black;
 }

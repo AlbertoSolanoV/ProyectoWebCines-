@@ -27,63 +27,76 @@
         </div>
     </div>
 
-
     <div class="contenedor">
-        <h3 class="titulo">Crear Uusario por el administrador</h3>
+        <h1 class="titulo">Crear Usario por el administrador</h1>
+
         <form class="formCont flex" action="">
-            <div class="itemContenedor">
-                <label class="texto"> Cedula</label>
-                <input class="inputSm" type="text" required />
-            </div>
-
-            <div class="itemContenedor">
-                <label class="texto">Nombre</label>
-                <input class="inputSm" type="text" required />
-            </div>
-            <div class="itemContenedor">
-                <label class="texto">Correo Electronico</label>
-                <input class="inputSm" type="email" required />
-            </div>
-            <div class="itemContenedor">
-                <label class="texto">Fecha de nacimiento</label>
-                <input class="inputSm" type="date" required />
-            </div>
-            <p class="texto"> <strong> Seleccione el rol del nuevo usuario </strong> </p>
-
-            <div class="itemContenedor flex contenedor_tipo">
-                <div class="contenedor_tipo">
-                    <input type="radio" name="usuario">
-                    <labe class="texto">Usuario cliente</label>
+            <div class="formIzq">
+                <div class="itemContenedor">
+                    <label class="texto">Cédula</label>
                 </div>
-                <div class="contenedor_tipo">
-                    <input type="radio" name="usuario">
-                    <label class="texto">Usuario Jefe de Soporte</label>
+                <div class="itemContenedor">
+                    <label class="texto">Correo Electronico</label>
                 </div>
-
-
-
+                <div class="itemContenedor">
+                    <label class="texto">Fecha de nacimiento</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Contraseña</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Confirmar contraseña</label>
+                </div>
             </div>
-            <div class="itemContenedor contenedorLista flex">
-
-                <select name="Cadena de cines">
-                    <option disabled hidden selected>Cadena de cines </option>
-                    <option class="texto">CCM Cinemas</option>
-                    <option class="texto">Cinemark</option>
-                    <option class="texto">Cinepolis</option>
-                    <option class="texto">Nova Cinemas</option>
-                    <option class="texto">Citicinemas</option>
-                    <option class="texto">Magaly</option>
-                    <option class="texto">Multicinemas</option>
-
-                </select>
+            <div class="formDere">
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="email" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="date" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="password" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="password" required />
+                </div>
             </div>
 
-            <div class="btn_contenedor itemContenedor flex">
-                <input class="texto btn_crear" type="submit" name="Enviar" value="Enviar" required />
+            <div class="select">
+                <p class="texto"> <strong> Seleccione el rol del nuevo usuario </strong> </p>
+
+                <div class="itemContenedor flex contenedor_tipo">
+                    <div class="contenedor_tipo">
+                        <input type="radio" name="usuario">
+                        <labe class="texto">Usuario cliente</label>
+                    </div>
+                    <div class="contenedor_tipo">
+                        <input type="radio" name="usuario">
+                        <label class="texto">Usuario Jefe de Soporte</label>
+                    </div>
+                </div>
+                <div class="itemContenedor contenedorLista flex">
+                    <select name="Cadena de cines">
+                        <option disabled hidden selected>Cadena de cines </option>
+                        <option class="texto">CCM Cinemas</option>
+                        <option class="texto">Cinemark</option>
+                        <option class="texto">Cinepolis</option>
+                        <option class="texto">Nova Cinemas</option>
+                        <option class="texto">Citicinemas</option>
+                        <option class="texto">Magaly</option>
+                        <option class="texto">Multicinemas</option>
+
+                    </select>
+                </div>
             </div>
-
-
-
+            <div class="itemContenedor flex btn_contenedor">
+                <input class="boton" type="submit" name="Enviar" value="Enviar" />
+            </div>
+        </form>
     </div>
     <!--Seccion de Footer-->
     <div class="footer flex ">

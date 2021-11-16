@@ -1,3 +1,10 @@
+.infoDos {
+  float: left;
+  margin: 4%;
+  margin-top: 5%;
+  width: 150px;
+}
+
 .peliUnoInfo {
   margin-bottom: 8%;
 }

@@ -68,13 +68,13 @@
     float: left;
     margin: 4%;
     margin-top: 5%;
+    width: 150px;
 }
 
 .content_header {
     justify-content: space-around;
     margin: 10px;
 }
-
 .bordes {
     border: 1px solid gray;
 }

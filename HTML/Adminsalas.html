@@ -8,6 +8,9 @@
     <!--Link de css para el css-->
     <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
     <link rel="stylesheet" type="text/css" href="../CSS/styleAdminSalas.css">
+    <!--Link de font awesome para los iconos-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
     <title>Administrador Salas</title>
 </head>
 
@@ -59,12 +62,12 @@
                 <table class="tabla">
 
                     <tr>
-                        <th class="texto">Codigo</th>
+                        <th class="texto">Código</th>
                         <th class="texto">Tipo</th>
                         <th class="texto">Cantidad de butacas</th>
                         <th class="texto">Pelicula</th>
                         <th class="texto">Espacios de Sala</th>
-                        <th class="texto">Accion</th>
+                        <th class="texto">Acción</th>
 
                     </tr>
                     <tr>
@@ -73,7 +76,7 @@
                         <td class="texto">X</td>
                         <td class="texto">X</td>
                         <td class="texto">X</td>
-                        <td class="texto">Modificar</td>
+                        <td class="texto"><i class="fas fa-edit" onclick="modificarSala(this)"></i></td>
                     </tr>
                 </table>
 

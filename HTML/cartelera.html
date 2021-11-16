@@ -35,112 +35,165 @@
     </div>
   </div>
 
-  <div class="contenedorMainPelicula flex">
-    <div class="capaDosImg flex-30 flex">
-      <img src="../IMG/Peliculas/100-dias-de-soledad.jpg" class="imgPelicula">
+
+  <div class="contenedorPrincipal flex">
+    <div class="contenedorBuscadores flex-30 flex">
+      <nav>
+        <ul id="menuAdmin">
+          <li>
+            <form name="formulario" method="post" action="">
+              <label class="texto" for="">Cines</label>
+              <!-- Campo de texto combinado con lista de opciones -->
+              <input type="text" list="items" />
+              <!-- Lista de opciones -->
+              <datalist id="items">
+                <option value="Cinepolis">Tres Rios</option>
+                <option value="Cinepolis">Cartago</option>
+                <option value="Cinemark">San Jose</option>
+              </datalist>
+            </form>
+          </li>
+          <li>
+            <form action="" method="post">
+              <label for="" class="texto"> Tipo de Salas</label>
+              <select name="TipoSalas" class="inputSm">
+                <option disabled hidden selected class="texto">Tipo de Sala</option>
+                <option class="texto">Normal</option>
+                <option class="texto">VIP</option>
+                <option class="texto">3D</option>
+                <option class="texto">4DX</option>
+              </select>
+            </form>
+          </li>
+          <li>
+            <form action="" method="post">
+              <label for="" class="texto"> Fecha </label>
+              <input type="date" name="fechaPelicula" id="fecha">
+            </form>
+          </li>
+          <li>
+            <form action="" method="post">
+              <label for="" class="texto"> Idioma</label>
+              <select name="TipoIdiom" class="inputSm">
+                <option class="texto">Subtitulada</option>
+                <option class="texto">Doblada</option>
+              </select>
+            </form>
+          </li>
+        </ul>
+      </nav>
+
+
     </div>
-    <div class="capaTresInfo flex-70 flex">
-      <h2 class="titulo">100 días de soledad</h2>
-      <div class="containerPelicula flex">
-        <div class="infoPelicula flex-30">
-          <ul class="infoDos flex ">
-            <li class="texto">Clasificacion: TP</li>
-            <li class="texto">Tipo: 2D</li>
-            <li class="texto">Duracion: 95 min</li>
-            <li class="texto">Horarios:</li>
-            <a href="compradetiquete.html">
-              <li class="horario">13:00</li>
-            </a>
-            <a href="compradetiquete.html">
-              <li class="horario">16:00</li>
-            </a>
-            <a href="compradetiquete.html">
-              <li class="horario">19:00</li>
-            </a>
-          </ul>
+    <div class="peliculas flex-70P">
+      <div class="contenedorMainPelicula flex">
+        <div class="capaDosImg flex-30 flex">
+          <img src="../IMG/Peliculas/100-dias-de-soledad.jpg" class="imgPelicula">
         </div>
-        <div class="descripPelicula flex-70">
-          <p class="texto"><strong>Sinopsis:</strong>
-            Cien años de soledad trata un siglo en la vida de la familia Buendía, cuyo patriarca, José Arcadio
-            Buendía,fundó el pueblo ficticio de Macondo, en Colombia. </p>
+        <div class="capaTresInfo flex-70 flex">
+          <h2 class="titulo">100 días de soledad</h2>
+          <div class="containerPelicula flex">
+            <div class="infoPelicula flex-30">
+              <ul class="infoDos flex ">
+                <li class="texto">TP</li>
+                <li class="texto">2D</li>
+                <li class="texto">95 min</li>
+                <li class="texto">Horarios:</li>
+                <a href="compradetiquete.html">
+                  <li class="horario">13:00</li>
+                </a>
+                <a href="compradetiquete.html">
+                  <li class="horario">16:00</li>
+                </a>
+                <a href="compradetiquete.html">
+                  <li class="horario">19:00</li>
+                </a>
+              </ul>
+            </div>
+            <div class="descripPelicula flex-70">
+              <p class="texto">
+                Cien años de soledad trata un siglo en la vida de la familia Buendía, cuyo patriarca, José Arcadio
+                Buendía,fundó el pueblo ficticio de Macondo, en Colombia. </p>
+            </div>
+            <div>
+            </div>
+          </div>
         </div>
-        <div>
+      </div>
+      <div class="contenedorMainPelicula flex">
+        <div class="capaDosImg flex_30 flex">
+          <img src="../IMG/Peliculas/guardianesGalaxia.jpg" class="imgPelicula">
+        </div>
+        <div class="capaTresInfo flex-70 flex">
+          <h2 class="titulo">Guardianes de la Galaxia</h2>
+          <div class="containerPelicula flex">
+            <div class="infoPelicula flex-30">
+              <ul class="infoDos flex ">
+                <li class="texto">TP</li>
+                <li class="texto">3D</li>
+                <li class="texto">107 min</li>
+                <li class="texto">Horarios:</li>
+                <a href="compradetiquete.html">
+                  <li class="horario">13:00</li>
+                </a>
+                <a href="compradetiquete.html">
+                  <li class="horario">16:00</li>
+                </a>
+                <a href="compradetiquete.html">
+                  <li class="horario">19:00</li>
+                </a>
+
+              </ul>
+            </div>
+            <div class="descripPelicula flex-70">
+              <p class="texto">
+                En "Guardianes de la Galaxia Vol. 2" de Marvel, los Guardianes deben luchar por mantener unida a
+                su nueva familia mientras desentrañan el misterio de la verdadera filiación de Peter Quill.</p>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contenedorMainPelicula flex">
+        <div class="capaDosImg flex-30 flex">
+          <img src="../IMG/Peliculas/joker.jpg" class="imgPelicula">
+        </div>
+        <div class="capaTresInfo flex-70 flex">
+          <h2 class="titulo">El Jocker</h2>
+          <div class="containerPelicula flex">
+            <div class="infoPelicula flex-30">
+              <ul class="infoDos flex ">
+                <li class="texto">TP</li>
+                <li class="texto">3D</li>
+                <li class="texto">107 min</li>
+                <li class="texto">Horarios:</li>
+                <a href="compradetiquete.html">
+                  <li class="horario">13:00</li>
+                </a>
+                <a href="compradetiquete.html">
+                  <li class="horario">16:00</li>
+                </a>
+                <a href="compradetiquete.html">
+                  <li class="horario">19:00</li>
+                </a>
+              </ul>
+            </div>
+            <div class="descripPelicula flex-70">
+              <p class="texto">
+                Arthur Fleck es un payaso con una extraña enfermedad mental. Responsable del cuidado de su madre
+                enferma, sueña con su propio espectáculo de stand up comedy. La situación no es favorable. Tanto
+                su condición mental como su oficio lo hacen blanco frecuente de agresiones en ciudad Gótica,
+                ciudad sumida en una profunda tensión social.</p>
+            </div>
+            <div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="contenedorMainPelicula flex">
-    <div class="capaDosImg flex-30 flex">
-      <img src="../IMG/Peliculas/guardianesGalaxia.jpg" class="imgPelicula">
-    </div>
-    <div class="capaTresInfo flex-70 flex">
-      <h2 class="titulo">Guardianes de la Galaxia</h2>
-      <div class="containerPelicula flex">
-        <div class="infoPelicula flex-30">
-          <ul class="infoDos flex ">
-            <li class="texto">Clasificacion: TP</li>
-            <li class="texto">Tipo: 3D</li>
-            <li class="texto">Duracion: 107 min</li>
-            <li class="texto">Horarios:</li>
-            <a href="compradetiquete.html">
-              <li class="horario">13:00</li>
-            </a>
-            <a href="compradetiquete.html">
-              <li class="horario">16:00</li>
-            </a>
-            <a href="compradetiquete.html">
-              <li class="horario">19:00</li>
-            </a>
-
-          </ul>
-        </div>
-        <div class="descripPelicula flex-70">
-          <p class="texto"><strong>Sinopsis:</strong>
-            En "Guardianes de la Galaxia Vol. 2" de Marvel, los Guardianes deben luchar por mantener unida a
-            su nueva familia mientras desentrañan el misterio de la verdadera filiación de Peter Quill.</p>
-        </div>
-        <div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="contenedorMainPelicula flex">
-    <div class="capaDosImg flex-30 flex">
-      <img src="../IMG/Peliculas/joker.jpg" class="imgPelicula">
-    </div>
-    <div class="capaTresInfo flex-70 flex">
-      <h2 class="titulo">El Jocker</h2>
-      <div class="containerPelicula flex">
-        <div class="infoPelicula flex-30">
-          <ul class="infoDos flex ">
-            <li class="texto">Clasificacion: TP</li>
-            <li class="texto">Tipo: 3D</li>
-            <li class="texto">Duracion: 107 min</li>
-            <li class="texto">Horarios:</li>
-            <a href="compradetiquete.html">
-              <li class="horario">13:00</li>
-            </a>
-            <a href="compradetiquete.html">
-              <li class="horario">16:00</li>
-            </a>
-            <a href="compradetiquete.html">
-              <li class="horario">19:00</li>
-            </a>
-          </ul>
-        </div>
-        <div class="descripPelicula flex-70">
-          <p class="texto"><strong>Sinopsis:</strong>
-            Arthur Fleck es un payaso con una extraña enfermedad mental. Responsable del cuidado de su madre
-            enferma, sueña con su propio espectáculo de stand up comedy. La situación no es favorable. Tanto
-            su condición mental como su oficio lo hacen blanco frecuente de agresiones en ciudad Gótica,
-            ciudad sumida en una profunda tensión social.</p>
-        </div>
-        <div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!--Seccion de Footer-->
   <div class="footer flex ">

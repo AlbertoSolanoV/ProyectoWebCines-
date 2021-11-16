@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
   <link rel="stylesheet" type="text/css" href="../CSS/carteleraAdministrador.css">
   <link rel="stylesheet" type="" href="../CSS/styleprincipal.css">
+  <!--Link de font awesome para los iconos-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <title>Administrador Cartelera</title>
 
@@ -52,203 +55,217 @@
     </div>
     <div class="capaTres flex-80 flex">
 
-      <div class="primerForm">
-        <h1 class="titulo">Agregar pelicula</h1>
-        <br>
-        <br>
-        <label class="labelUno texto" for="">Nombre</label>
-        <input class="inputUno" type="text">
-        <label class="labelDos texto" for="">Duracion</label>
-        <input class="inputDos" type="number" min="1" value="1">
-        <br>
-        <br>
-        <label class="labelTres texto" for="">Categoria</label>
-        <select name="Categorias" class="inputDos">
-          <option disabled hidden selected>Categorias</option>
-          <option class="texto">Acción</option>
-          <option class="texto">Aventuras</option>
-          <option class="texto">Ciencia Ficción</option>
-          <option class="texto">Comedia</option>
-          <option class="texto">No-Ficción</option>
-          <option class="texto">Drama</option>
-          <option class="texto">Fantasía</option>
-          <option class="texto">Musical</option>
-          <option class="texto">Suspense</option>
-          <option class="texto">Terror</option>
-        </select>
-        <label class="labelCinco texto" for="">Clasificacion</label>
-        <select name="Clasificacion" class="inputDos">
-          <option disabled hidden selected>Clasificacion</option>
-          <option class="texto">TP(general o Todo Público)</option>
-          <option class="texto">TPA (Todo Público, se recomienda orientación de los padres)</option>
-          <option class="texto">TP7 (todo público, niños menores de 7 acompañados de un adulto)</option>
-          <option class="texto">M12 (mayores de 12 años)</option>
-          <option class="texto">M15 (mayores de 15 años)</option>
-          <option class="texto">M18 (mayores de 18 años)</option>
-        </select>
-        <br>
-        <br>
-        <label class="labelCuatro texto" for="">Imagen</label>
-        <input class="inputCuatro" type="file">
-        <br>
-        <br>
-        <label for="" class="sinopsis texto">Sinopsis</label>
-        <textarea class="textArea" name="" id="" cols="30" rows="10"></textarea>
-      </div>
+      <h1 class="titulo">Agregar pelicula</h1>
+      <form action="" method="post">
+        <div class="contenedorPeliculas flex">
+          <div class="itemPeli">
+            <label class="labelUno texto" for="">Nombre</label>
+            <input class="inputUno" type="text">
+          </div>
 
-      <div>
-        <h1 class="titulo">Buscar Pelicula</h1>
-        <br>
-        <br>
-        <div class="modCart">
-          <label for="" class="texto">Buscar</label>
-          <input type="text">
-          <button>Buscar</button>
-          <br>
-          <br>
-        </div>
-        <table class="tabla">
+          <div class="itemPeli">
+            <label class="labelDos texto" for="">Duración</label>
+            <input class="inputDos" type="number" min="1" value="1">
+            <label for="" class=" texto">min</label>
+          </div>
 
-          <tr>
-            <th class="texto"><strong>Nombre</strong></th>
-            <th class="texto"><strong>Categoria</strong></th>
-            <th class="texto"><strong>Clasificacion</strong></th>
-            <th class="texto"><strong>Duracion</strong></th>
-            <th class="texto"><strong>Imagen</strong></th>
-            <th class="texto"><strong>Tipo</strong></th>
-            <th class="texto"><strong>Accion</strong></th>
-          </tr>
-
-          <tr>
-            <td class="texto">100 annos de soledad</td>
-            <td class="texto">Drama</td>
-            <td class="texto">Todo Publico</td>
-            <td class="texto">107 min</td>
-            <td class="texto"></td>
-            <td class="texto">2D</td>
-            <td class="texto"><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
-          </tr>
-
-          <tr>
-            <td class="texto">Guardianes de la galaxia</td>
-            <td class="texto">Ficcion</td>
-            <td class="texto">Todo Publico</td>
-            <td class="texto">97 min</td>
-            <td class="texto"></td>
-            <td class="texto">3D</td>
-            <td class="texto"><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
-          </tr>
-
-          <tr>
-            <td class="texto">Jocker</td>
-            <td class="texto">Accion</td>
-            <td class="texto">+15</td>
-            <td class="texto">84min</td>
-            <td class="texto"></td>
-            <td class="texto">2D</td>
-            <td class="texto"><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
-          </tr>
-        </table>
-        <br>
-        <br>
-      </div>
-      <!--Inicio parte de Angel-->
-      <h1 class="titulo">Agregar cartelera</h1>
-      <div class="Contenedor flex">
-        <!--aca empieza-->
-        <div>
-          <div class="Salas">
-            <label class="texto" for="Salas">Salas</label>
-            <select name="Salas" class="inputDos" id="Salas" multiple>
-              <option value="texto">sala 1</option>
-              <option value="texto">sala 2</option>
-              <option value="texto">sala 3</option>
-              <option value="texto">sala 4</option>
-              <option value="texto">sala 5</option>
-              <option value="texto">sala 6</option>
-              <option value="texto">sala 7</option>
-              <option value="texto">sala 8</option>
-              <option value="texto">sala 9</option>
+          <div class="itemPeli">
+            <label class="labelTres texto" for="">Categoría</label>
+            <select name="Categorias" class="inputDos">
+              <option disabled hidden selected>Categorías</option>
+              <option class="texto">Acción</option>
+              <option class="texto">Aventuras</option>
+              <option class="texto">Ciencia Ficción</option>
+              <option class="texto">Comedia</option>
+              <option class="texto">No-Ficción</option>
+              <option class="texto">Drama</option>
+              <option class="texto">Fantasía</option>
+              <option class="texto">Musical</option>
+              <option class="texto">Suspense</option>
+              <option class="texto">Terror</option>
+            </select>
+          </div>
+          <div class="itemPeli">
+            <label class="labelCinco texto" for="">Clasificación</label>
+            <select name="Clasificacion" class="inputDos">
+              <option disabled hidden selected>Clasificación</option>
+              <option class="texto">TP(general o Todo Público)</option>
+              <option class="texto">TPA (Todo Público, se recomienda orientación de los padres)</option>
+              <option class="texto">TP7 (todo público, niños menores de 7 acompañados de un adulto)</option>
+              <option class="texto">M12 (mayores de 12 años)</option>
+              <option class="texto">M15 (mayores de 15 años)</option>
+              <option class="texto">M18 (mayores de 18 años)</option>
             </select>
           </div>
 
-          <div class="Horarios">
-            <label class="texto" for="Horarios">Cadenas de Cines</label>
-            <select name="Cadena de cines">
-              <option disabled hidden selected>Cadena de cines </option>
-              <option class="texto">CCM Cinemas</option>
-              <option class="texto">Cinemark</option>
-              <option class="texto">Cinepolis</option>
-              <option class="texto">Nova Cinemas</option>
-              <option class="texto">Citicinemas</option>
-              <option class="texto">Magaly</option>
-              <option class="texto">Multicinemas</option>
-
-          </select>
+          <div class="itemPeli">
+            <label class="labelCuatro texto" for="">Imagen</label>
+            <input class="inputCuatro" type="file">
           </div>
-        </div>
+          <div class="itemPeli">
+            <label for="" class="sinopsis texto">Sinopsis</label>
+            <textarea class="textArea" name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="Botones">
+            <button class="texto btn" onclick="">Agregar</button>
+            <button class="texto btn" onclick="limpiar()">Cancelar</button>
 
-        <div class="Horarios">
-          <label class="texto" for="Horarios">Horarios</label>
-          <select name="Horarios" class="inputDos" id="Horarios" multiple>
-            <option value="Horarios">11:00 am</option>
-            <option value="Horarios">12:00 pm</option>
-            <option value="Horarios">01:00 pm</option>
-            <option value="Horarios">02:00 pm</option>
-            <option value="Horarios">03:00 pm</option>
-            <option value="Horarios">04:00 pm</option>
-            <option value="Horarios">05:00 pm</option>
-            <option value="Horarios">06:00 pm</option>
-            <option value="Horarios">07:00 pm</option>
-            <option value="Horarios">08:00 pm</option>
-            <option value="Horarios">09:00 pm</option>
-          </select>
-        </div>
+          </div>
+      </form>
+
+    </div>
+
+    <div>
+      <h1 class="titulo">Buscar Pelicula</h1>
+      <br>
+      <br>
+      <div class="modCart">
+        <label for="" class="texto">Buscar</label>
+        <input type="text">
+        <button>Buscar</button>
+        <br>
+        <br>
+      </div>
+      <table class="tabla">
+
+        <tr>
+          <th class="texto"><strong>Nombre</strong></th>
+          <th class="texto"><strong>Categoría</strong></th>
+          <th class="texto"><strong>Clasificación</strong></th>
+          <th class="texto"><strong>Duración</strong></th>
+          <th class="texto"><strong>Imagen</strong></th>
+          <th class="texto"><strong>Tipo</strong></th>
+          <th class="texto"><strong>Accióon</strong></th>
+        </tr>
+
+        <tr>
+          <td class="texto">100 años de soledad</td>
+          <td class="texto">Drama</td>
+          <td class="texto">Todo Publico</td>
+          <td class="texto">107 min</td>
+          <td class="texto"></td>
+          <td class="texto">2D</td>
+          <td class="texto"><i class="fas fa-edit" onclick="modificarPeli(this)"></i></td>
+
+        </tr>
+
+        <tr>
+          <td class="texto">Guardianes de la galaxia</td>
+          <td class="texto">Ficcion</td>
+          <td class="texto">Todo Publico</td>
+          <td class="texto">97 min</td>
+          <td class="texto"></td>
+          <td class="texto">3D</td>
+          <td class="texto"><i class="fas fa-edit" onclick="modificarPeli(this)"></i></td>
+        </tr>
+
+        <tr>
+          <td class="texto">Jocker</td>
+          <td class="texto">Accion</td>
+          <td class="texto">+15</td>
+          <td class="texto">84min</td>
+          <td class="texto"></td>
+          <td class="texto">2D</td>
+          <td class="texto"><i class="fas fa-edit" onclick="modificarPeli(this)"></i></td>
+        </tr>
+      </table>
+      <br>
+      <br>
+    </div>
+    <!--Inicio parte de Angel-->
+    <h1 class="titulo">Agregar cartelera</h1>
+    <div class="contenedor flex">
+      <!--aca empieza-->
+
+      <div class="Horarios">
+        <label class="texto" for="Horarios">Salas</label>
+        <select name="Sala" class="inputDos" id="sala" multiple>
+          <option value="texto">sala 1</option>
+          <option value="texto">sala 2</option>
+          <option value="texto">sala 3</option>
+          <option value="texto">sala 4</option>
+          <option value="texto">sala 5</option>
+          <option value="texto">sala 6</option>
+          <option value="texto">sala 7</option>
+          <option value="texto">sala 8</option>
+          <option value="texto">sala 9</option>
+        </select>
       </div>
 
-        <div class="medcontent flex">
-          <form>
-            <div class="Calendario">
-              <label class="texto" for="Calendario">Calendario</label>
-              <input type="date" id="Calendario" name="Calendario">
-              <span class="validity"></span>
-            </div>
-          </form>
-          <form>
-            <div class="Caja">
-              <textarea name="comentarios" rows="10" cols="40" disabled> Información de la cartelera</textarea>
-            </div>
-          </form>
-        </div>
+      <div class="Horarios">
+        <label class="texto" for="Horarios">Cadenas de Cines</label>
+        <select name="Cadena de cines">
+          <option disabled hidden selected class="texto">Cadena de cines </option>
+          <option class="texto">CCM Cinemas</option>
+          <option class="texto">Cinemark</option>
+          <option class="texto">Cinepolis</option>
+          <option class="texto">Nova Cinemas</option>
+          <option class="texto">Citicinemas</option>
+          <option class="texto">Magaly</option>
+          <option class="texto">Multicinemas</option>
+        </select>
+      </div>
 
-        <div class="footcontent flex">
-          <div class="Botones">
-            <button type="button" class="btn" onclick="Agregar()"> Agrega</button>
-            <button type="button" class="btn" onclick="Cancelar()"> Cancelar</button>
-          </div>
-          <table class="tabla">
 
-            <tr>
-              <th class="texto"><strong>Codigo</strong></th>
-              <th class="texto"><strong>Pelicula</strong></th>
-              <th class="texto"><strong>Horario</strong></th>
-              <th class="texto"><strong>Sala</strong></th>
-              <th class="texto"><strong>Dia</strong></th>
-              <th class="texto"><strong>Accion</strong></th>
-            </tr>
-
-            <tr>
-              <td class="texto">CA001</td>
-              <td class="texto">El Joker</td>
-              <td class="texto">18:20</td>
-              <td class="texto">Sala 1</td>
-              <td class="texto">05/11/2021</td>
-              <td class="texto"><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
-            </tr>
-          </table>
-        </div>
+      <div class="Horarios">
+        <label class="texto" for="Horarios">Horarios</label>
+        <select name="Horarios" class="inputDos" id="Horarios" multiple>
+          <option value="Horarios">11:00 am</option>
+          <option value="Horarios">12:00 pm</option>
+          <option value="Horarios">01:00 pm</option>
+          <option value="Horarios">02:00 pm</option>
+          <option value="Horarios">03:00 pm</option>
+          <option value="Horarios">04:00 pm</option>
+          <option value="Horarios">05:00 pm</option>
+          <option value="Horarios">06:00 pm</option>
+          <option value="Horarios">07:00 pm</option>
+          <option value="Horarios">08:00 pm</option>
+          <option value="Horarios">09:00 pm</option>
+        </select>
       </div>
     </div>
+
+    <div class="medcontent flex">
+      <div class="Calendario">
+        <form>
+          <label class="texto" for="Calendario">Calendario</label>
+          <input type="date" id="Calendario" name="Calendario">
+          <span class="validity"></span>
+        </form>
+      </div>
+      <div class="Caja">
+        <textarea name="comentarios" rows="10" cols="40" disabled> Información de la cartelera</textarea>
+      </div>
+    </div>
+
+    <div class="footcontent">
+      <div class="Botones flex">
+        <button type="button" class="btn texto" onclick="Agregar()"> Agrega</button>
+        <button type="button" class="btn texto" onclick="Cancelar()"> Cancelar</button>
+      </div>
+      <table class="tabla">
+
+        <tr>
+          <th class="texto"><strong>Codigo</strong></th>
+          <th class="texto"><strong>Pelicula</strong></th>
+          <th class="texto"><strong>Horario</strong></th>
+          <th class="texto"><strong>Sala</strong></th>
+          <th class="texto"><strong>Dia</strong></th>
+          <th class="texto"><strong>Accion</strong></th>
+        </tr>
+
+        <tr>
+          <td class="texto">CA001</td>
+          <td class="texto">El Joker</td>
+          <td class="texto">18:20</td>
+          <td class="texto">Sala 1</td>
+          <td class="texto">05/11/2021</td>
+          <td class="texto"><i class="fas fa-edit" onclick="modificarPeli(this)"></i></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  </div>
   </div>
 
 
