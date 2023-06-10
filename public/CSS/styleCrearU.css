@@ -1,0 +1,47 @@
+.contenedor {
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formCont {
+    justify-content: center;
+    margin: 10px;
+}
+
+.formIzq {
+    flex: 0 0 40%;
+    text-align: right;
+    justify-content: right;
+}
+
+.formDere {
+    flex: 0 0 40%;
+}
+
+.boton {
+    text-align: center;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    height: 50px;
+}
+
+.inputSm {
+    width: 300px;
+    height: 20px;
+}
+
+.btn_contenedor {
+    justify-content: center;
+}
+
+.itemContenedor {
+    margin: 5px;
+}
+.itemContenedorInput {
+    margin: 5px;
+    margin-bottom: 15px;
+}

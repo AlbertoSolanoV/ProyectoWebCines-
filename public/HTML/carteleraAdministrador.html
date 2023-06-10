@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="" href="../CSS/carteleraAdministrador.css">
+  <link rel="shortcut icon" href="#" />
+
+  <!--Links de google fonts tipo de letra-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <!--Link de css para el css-->
+  <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/carteleraAdministrador.css">
+  <link rel="stylesheet" type="" href="../CSS/styleprincipal.css">
+  <!--Link de font awesome para los iconos-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <title>Administrador Cartelera</title>
+</head>
+
+<body>
+  <div class="header_admin flex">
+    <div class="flex_30">
+      <img src="../IMG/LogoEmpresa.png" class="logo">
+    </div>
+    <div class="flex_70 menu">
+      <a href="login.html" class="menu_item" id="userid">Ingresar</a>
+    </div>
+  </div>
+
+
+
+  <div class="flex">
+    <div class="capaDos flex-20 flex">
+      <nav>
+        <ul id="menuAdmin" >
+          <li><a class="texto" href="adminUsuarios.html"> Informe y estadísticas</a></li>
+          <li><a class="texto" href="margen.html"> Margen de ganancias</a></li>
+          <li><a class="texto" href="adminCadenasCines.html"> Cadenas de cine</a></li>
+          <li><a class="texto" href="Adminsalas.html"> Disponibilidad de espacios</a></li>
+          <li><a class="texto" href="carteleraAdministrador.html"> Cartelera</a></li>
+          <li><a class="texto" href="adminColaboradores.html"> Colaboradores</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="capaTres flex-80 flex">
+
+      <h1 class="titulo">Agregar pelicula</h1>
+      <form action="" onsubmit="return capturarDatos()">
+        <div class="contenedorPeliculas flex">
+          <div class="itemPeli">
+            <label class="labelUno texto" for="">Nombre</label>
+            <input class="inputUno" id="nombre" type="text">
+          </div>
+
+          <div class="itemPeli">
+            <label class="labelDos texto" for="">Duración</label>
+            <input class="inputDos" id="duracion" type="number" min="1" value="1">
+            <label for="" class=" texto">min</label>
+          </div>
+
+          <div class="itemPeli">
+            <label class="labelTres texto" for="">Categoría</label>
+            <select name="categorias" class="inputDos" id="categoria">
+              <option disabled hidden selected>Categorías</option>
+              <option value="Accion" class="texto">Acción</option>
+              <option value="Aventuras" class="texto">Aventuras</option>
+              <option value="Ciencia Ficción" class="texto">Ciencia Ficción</option>
+              <option value="Comedia" class="texto">Comedia</option>
+              <option value="No-Ficcion" class="texto">No-Ficción</option>
+              <option value="Drama" class="texto">Drama</option>
+              <option value="Fantasia" class="texto">Fantasía</option>
+              <option value="Musical" class="texto">Musical</option>
+              <option value="Suspense" class="texto">Suspense</option>
+              <option value="Terror" class="texto">Terror</option>
+            </select>
+          </div>
+          <div class="itemPeli">
+            <label class="labelCinco texto" for="">Clasificación</label>
+            <select name="Clasificacion" class="inputDos" id="clasificacion">
+              <option disabled hidden selected>Clasificación</option>
+              <option value="TP(general o Todo Público)" class="texto">TP(general o Todo Público)</option>
+              <option value="TPA (Todo Público, se recomienda orientación de los padres)" class="texto">TPA (Todo
+                Público, se recomienda orientación de los padres)</option>
+              <option value="TP7 (todo público, niños menores de 7 acompañados de un adulto)" class="texto">TP7 (todo
+                público, niños menores de 7 acompañados de un adulto)</option>
+              <option value="M12 (mayores de 12 años)" class="texto">M12 (mayores de 12 años)</option>
+              <option value="M15 (mayores de 15 años)" class="texto">M15 (mayores de 15 años)</option>
+              <option value="M18 (mayores de 18 años)" class="texto">M18 (mayores de 18 años)</option>
+            </select>
+          </div>
+
+          <div class="itemPeli">
+            <label class="labelCuatro texto" for="">Imagen</label>
+            <input class="inputCuatro" type="file" id="imagen">
+          </div>
+          <div class="itemPeli">
+            <label for="" id="sinopsisTxt" class="sinopsis texto">Sinopsis</label>
+            <textarea class="textArea" name="" id="sinopsis" cols="30" rows="10"></textarea>
+          </div>
+          <div class="Botones">
+
+            <input type="submit" class="texto btn" value="Agregar" id="agregarbtn">
+            <button class="texto btn" onclick="limpiar()">Cancelar</button>
+          </div>
+      </form>
+    </div>
+
+    <div>
+      <table class="tabla" id="infoTabla">
+        <tr>
+          <th class="texto"><strong>Nombre</strong></th>
+          <th class="texto"><strong>Categoría</strong></th>
+          <th class="texto"><strong>Clasificación</strong></th>
+          <th class="texto"><strong>Duración</strong></th>
+          <th class="texto"><strong>Imagen</strong></th>
+          <th class="texto"><strong>Sinopsis</strong></th>
+          <th class="texto"><strong>Acción</strong></th>
+        </tr>
+
+
+      </table>
+      <br>
+      <br>
+    </div>
+    <!--Inicio parte de Angel-->
+    <h1 class="titulo">Agregar cartelera</h1>
+    <div class="contenedor flex">
+      <!--aca empieza-->
+      <form action="" onsubmit="return agregarCartelera()">
+
+        <div class="Horarios">
+          <label class="texto" for="Horarios">Cadenas de Cines</label>
+          <select name="Cadena de cines" id="cinesCartelera" onchange="cineSeleccionado()">
+            <option disabled hidden selected class="texto">Cadena de cines </option>
+
+          </select>
+        </div>
+
+        <div class="Horarios">
+          <label class="texto" for="Horarios">Salas</label>
+          <select name="Sala" class="inputDos" id="salasCartelera" multiple >
+
+          </select>
+        </div>
+
+
+        <div class="Horarios">
+          <label class="texto" for="Horarios">Horarios</label>
+          <select name="Horarios" class="inputDos" id="Horarios" multiple>
+            <option value="11:00" class="texto">11:00 am</option>
+            <option value="12:00" class="texto">12:00 pm</option>
+            <option value="13:00" class="texto">01:00 pm</option>
+            <option value="14:00" class="texto">02:00 pm</option>
+            <option value="15:00" class="texto">03:00 pm</option>
+            <option value="16:00" class="texto">04:00 pm</option>
+            <option value="17:00" class="texto">05:00 pm</option>
+            <option value="18:00" class="texto">06:00 pm</option>
+            <option value="19:00" class="texto">07:00 pm</option>
+            <option value="20:00" class="texto">08:00 pm</option>
+            <option value="21:00" class="texto">09:00 pm</option>
+          </select>
+        </div>
+        <div class="Horarios">
+          <label class="texto" for="Horarios">Película</label>
+          <select name="Peliculas" class="inputDos" id="PeliculasCarte">
+          </select>
+        </div>
+    </div>
+  <div class="medcontent flex">
+    <div class="Calendario">
+      <label class="texto" for="Calendario">Fecha Incio</label>
+      <input type="date" id="CalendarioIncio" name="Calendario">
+    </div>
+    <div class="Calendario">
+      <label class="texto" for="Calendario">Fecha Finalizado</label>
+      <input type="date" id="CalendarioFin" name="Calendario">
+    </div>
+
+  </div>
+
+  <div class="footcontent">
+    <div class="Botones flex">
+      <input type="submit" class="btn texto" value="Agregar">
+      </form>
+      <button type="button" class="btn texto" onclick="cancelarCartelera()"> Cancelar</button>
+    </div>
+    <table class="tabla" id="salasCarteleraTa">
+     
+    </table>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <!--Seccion de Footer-->
+  <div class="footer flex ">
+    <div class="flex-33 ">
+      <a href="indexNosotros.html" class="footer_item">Nosotros</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="contacto.html" class="footer_item">Contacto</a>
+    </div>
+  </div>
+
+  <script src="../JS/carteleraAdmin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+</body>
+
+</html>

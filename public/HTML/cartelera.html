@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../CSS/cartelera.css">
+
+  <!--Links de google fonts tipo de letra-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <!--Link de bootstrap para carousel-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!--Link de css para el css-->
+  <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/cartelera.css">
+  <title>Cartelera</title>
+
+
+</head>
+
+
+
+<body>
+  <div class="header flex">
+    <div class="flex_30">
+      <img src="../IMG/LogoEmpresa.png" class="logo">
+    </div>
+    <div class="login flex">
+      <a href="login.html" class="menu_item login" id="userid">Ingresar</a>
+    </div>
+    <div class="flex_70 menu">
+      <a href="../index.html" class="menu_item">Inicio</a>
+      <a href="cines.html" class="menu_item">Cines</a>
+      <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
+    </div>
+  </div>
+
+
+  <div class="contenedorPrincipal flex fondoBody">
+    <div class="contenedorBuscadores flex-30 flex">
+      <nav>
+        <ul id="menuAdmin">
+          <li>
+              <label class="texto-blanco" for="">Cines</label>
+              <!-- Campo de texto combinado con lista de opciones -->
+              <input type="text" list="cines" id="cineInput" oninput="onInput()" placeholder="Cine"/>
+              <!-- Lista de opciones -->
+              <datalist id="cines">
+              </datalist>
+          </li>
+          <li>
+            <form action="" method="post">
+              <label for="" class="texto-blanco"> Tipo de Salas</label>
+              <select name="TipoSalas" class="inputSm" id="tipoSala" onclick="onInput()">
+                <option class="texto" selected>2D</option>
+                <option class="texto">3D</option>
+                <option class="texto">VIP</option>
+                <option class="texto">4DX</option>
+              </select>
+            </form>
+          </li>
+          <li id="fechaContent">
+            <form action="" method="post">
+              <label for="" class="texto-blanco"> Fecha </label>
+              <input type="date" name="fecha" id="fecha">
+            </form>
+          </li>
+          <li>
+            <form action="" method="post">
+              <label for="" class="texto-blanco"> Idioma</label>
+              <select name="TipoIdiom" class="inputSm">
+                <option class="texto">Subtitulada</option>
+                <option class="texto">Doblada</option>
+              </select>
+            </form>
+          </li>
+        </ul>
+      </nav>
+
+
+    </div>
+    <div class="peliculas flex-70P" id="peliCartelera">
+     
+
+    </div>
+  </div>
+
+
+  <!--Seccion de Footer-->
+  <div class="footer flex ">
+    <div class="flex-33 ">
+      <a href="indexNosotros.html" class="footer_item">Nosotros</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="contacto.html" class="footer_item">Contacto</a>
+    </div>
+  </div>
+
+
+  <script src="../JS/cartelera.js"></script>
+</body>
+
+</html>

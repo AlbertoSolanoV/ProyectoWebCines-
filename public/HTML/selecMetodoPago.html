@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <!--Links de google fonts tipo de letra-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <!--Link de css para el css-->
+  <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/styleSelectMetodoPago.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <title>Compras de tiquetes</title>
+</head>
+
+<body>
+  <div class="header flex">
+    <div class="flex_30">
+      <img src="../IMG/LogoEmpresa.png" class="logo">
+    </div>
+    <div class="login flex">
+      <a href="login.html" class="menu_item login" id="userid">Ingresar</a>
+    </div>
+    <div class="flex_70 menu">
+      <a href="../index.html" class="menu_item">Inicio</a>
+      <a href="cines.html" class="menu_item">Cines</a>
+      <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
+    </div>
+  </div>
+  <!--Contenido-->
+  <div class="conetendor_principal flex">
+    <div class="flex_30">
+      <h1 class="titulo">Seleccione método de pago</h1>
+    </div>
+    <div class="flex_70 contenido">
+      <div class="content_header flex">
+        <div class="bordes">
+            <ul class="infoDos">
+                <li class="texto" id="clasificacion"></li>
+                <li class="texto" id="tipo"></li>
+                <li class="texto" id="duracion"></li>
+                <li class="peliUnoInfo texto">Horario:</li>
+                <li class="horario texto" id="horario"></li>
+            </ul>
+        </div>
+        <div class="infoDos bordes">
+            <p class="texto">Subtotal</p>
+            <p class="texto" id="total">₡ 0</p>
+        </div>
+    </div>
+
+      <div class="">
+        <div class="contenido_usuario">
+          <h1 class="titulo">Mis Tarjetas</h1>
+          <div class="tabla_contenedor">
+            <table id="tarjetaListas">
+              <thead>
+                <tr class="">
+                  <th class="texto">Nombre</th>
+                  <th class="texto">Ultimo Número</th>
+                  <th class="texto">Vencimiento</th>
+                  <th class="texto">Accion</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+  
+              </tbody>
+              
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        
+          <button class="boton texto" onclick="llevar()">Utilizar otra tarjeta</button>
+       
+      </div>
+    </div>
+  </div>
+  <!--Seccion de Footer-->
+  <div class="footer flex ">
+    <div class="flex-33 ">
+      <a href="#" class="footer_item">Nosotros</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="contacto.html" class="footer_item">Contacto</a>
+    </div>
+  </div>
+</body>
+
+<script src="../JS/metodoPagoCompra.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+</html>

@@ -1,0 +1,17 @@
+
+.cine {
+  justify-content: space-around;
+  margin: 15px;
+  flex-wrap: wrap;
+}
+
+.img_cine {
+  width: 350px;
+  height: 200px;
+}
+.titulo-blanco{
+  margin-top: 0;
+}
+.info_cine{
+  text-align: center;
+}

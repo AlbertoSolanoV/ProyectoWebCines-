@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <!--Links de google fonts tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <!--Link de css para el css-->
+    <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/styleAdminSalas.css">
+    <!--Link de font awesome para los iconos-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Administrador Salas</title>
+</head>
+
+<body>
+    <div class="header_admin flex">
+        <div class="flex_30">
+            <img src="../IMG/LogoEmpresa.png" class="logo">
+        </div>
+        <div class="flex_70 menu">
+            <a href="login.html" class="menu_item " id="userid">Ingresar</a>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="capaDos flex-20 ">
+            <nav>
+                <ul id="menuAdmin">
+                    <li><a class="texto" href="adminUsuarios.html"> Informe y estadísticas</a></li>
+                    <li><a class="texto" href="margen.html"> Margen de ganancias</a></li>
+                    <li><a class="texto" href="adminCadenasCines.html"> Cadenas de cine</a></li>
+                    <li><a class="texto" href="Adminsalas.html"> Disponibilidad de espacios</a></li>
+                    <li><a class="texto" href="carteleraAdministrador.html"> Cartelera</a></li>
+                    <li><a class="texto" href="adminColaboradores.html"> Colaboradores</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex-80">
+            <div class="contenido">
+                <h1 class="titulo">Cines</h1>
+
+                <table class="tabla" id="tablaCines">
+                    <tr>
+                        <th class="texto">Logo</th>
+                        <th class="texto">Nombre de cines</th>
+                        <th class="texto">Salas</th>
+                    </tr>
+                </table>
+                <h1 class="titulo">Salas de cine</h1>
+                <table class="tabla" id="tablaSalas">
+                    <tr>
+                        <th class="texto">Nombre</th>
+                        <th class="texto">Tipo</th>
+                        <th class="texto">Cantidad de butacas</th>
+                        <th class="texto">Estado</th>
+                        <th class="texto">Acción</th>
+                    </tr>
+
+                </table>
+
+                <h1 class="titulo" id="cineTit">Agregar salas a "Nombre del cine"</h1>
+                <div class="contentSalaAgregar flex">
+                    <div class="cant">
+                        <form action="" onsubmit=" return agregar()">
+                            <label for="" class="texto"> Cantidad de Salas</label>
+                            <input type="number" name="" id="cantidadSalas" class="inputSm texto" min="1" value="1">
+                    </div>
+                    <div class="cant">
+                        <label for="" class="texto"> Tipo de Salas</label>
+                        <select name="TipoSalas" class="inputSm" id="tipoSala">
+                            <option disabled hidden selected class="texto">Tipo de Sala</option>
+                            <option class="texto">2D</option>
+                            <option class="texto">VIP</option>
+                            <option class="texto">3D</option>
+                            <option class="texto">4DX</option>
+                        </select>
+                    </div>
+                    <div class="cant">
+                        <label for="" class="texto"> Cantidad de Butacas</label>
+                        <input type="number" name="" id="Cantidadbutacas" class="inputSm texto" min="20" value="20">
+                    </div>
+                    <div class="cant" id="modificarEstado">
+                        <label for="" class="texto"> Estado de sala</label>
+                        <input type="checkbox" class="texto" id="cbEstado">
+                    </div>
+                </div>
+                <div class="boton">
+                    <input type="submit" value="Agregar" class="btn" id="botonAgregar">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Seccion de Footer-->
+    <div class="footer flex ">
+        <div class="flex-33 ">
+            <a href="indexNosotros.html" class="footer_item">Nosotros</a>
+        </div>
+        <div class="flex-33 ">
+            <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+        </div>
+        <div class="flex-33 ">
+            <a href="contacto.html" class="footer_item">Contacto</a>
+        </div>
+    </div>
+    <script src="../JS/salas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+</body>
+
+</html>

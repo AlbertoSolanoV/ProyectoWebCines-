@@ -1,0 +1,205 @@
+.tabla {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border-style: solid;
+}
+
+ul {
+    list-style: none;
+    padding-left: 25%;
+}
+
+html {
+    height: 100%;
+}
+
+#menuAdmin li>a {
+    color: black;
+    padding: 5px;
+    display: block;
+    border: 1px solid black;
+    margin-bottom: 3%;
+    opacity: 0.8;
+}
+.imagen{
+    height: 150px;
+    width: 110px;
+}
+.capaDos {
+    border-right: 1px solid black;
+    padding-right: 20px;
+    padding-top: 35px;
+}
+
+html {
+    height: 100%;
+}
+
+
+
+.capaTres {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.capaUno {
+    width: 30%;
+    display: block;
+}
+
+.tituloUno {
+    margin-bottom: 4%;
+    padding-left: 16%;
+}
+
+.tituloDos {
+    margin-bottom: 7%;
+    padding-left: 8%;
+}
+
+.editar {
+    color: rgb(rgb(155, 10, 10));
+    cursor: pointer;
+}
+
+#contenedorForm {
+    margin-left: 45px;
+    font-size: 12px;
+}
+
+.boton {
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    background-color: #b9c9fe;
+    font-weight: bold;
+}
+
+/*Cartelera*/
+.tituloAgregar {
+    padding-left: 35%;
+}
+
+
+.pad {
+    padding-left: 6%;
+}
+
+/*modificar*/
+.modCart {
+    text-align: center;
+}
+
+
+.contenedorPeliculas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.itemPeli{
+    margin: 15px;
+
+}
+.inputUno {
+   
+    width: 160px;
+}
+
+.inputTres {
+    margin-left: 2.5%;
+    width: 160px;
+}
+
+.inputCinco {
+    width: 160px;
+}
+
+.inputDos {
+    width: 160px;
+
+}
+
+.inputSeis {
+    width: 160px;
+    margin-left: 2.5%;
+}
+
+.sinopsis {
+    margin-left: 10%;
+}
+
+.textArea {
+    margin-left: 10%;
+    min-height: 60px;
+    max-height: 60px;
+}
+
+.Salas {
+    margin: 10px;
+    float: left;
+}
+
+.Horarios {
+    margin: 10px;
+    float: left;
+}
+
+.Calendario {
+
+    width: 300px;
+    height: 200px;
+    float: left;
+
+}
+
+.Caja {
+
+    float: left;
+
+}
+
+.Botones {
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+caption {
+    padding: 0.3em;
+}
+
+.contenedor {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.btn {
+    background-color: lightgray;
+    text-align: center;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    width: 150px;
+}
+
+.footcontent {
+    margin-bottom: 20px;
+}
+
+.medcontent {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}

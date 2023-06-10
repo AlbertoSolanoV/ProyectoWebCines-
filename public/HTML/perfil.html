@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <!--Links de google fonts tipo de letra-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <!--Link de css para el css-->
+  <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/stylePerfil.css">
+
+  <title>Perfil</title>
+</head>
+
+<body>
+  <div class="header flex">
+    <div class="flex_30">
+      <img src="../IMG/LogoEmpresa.png" class="logo">
+    </div>
+    <div class="login flex">
+      <a href="perfil.html" class="menu_item login" id="userid">Ingresar</a>
+    </div>
+    <div class="flex_70 menu">
+      <a href="../index.html" class="menu_item">Inicio</a>
+      <a href="cines.html" class="menu_item">Cines</a>
+      <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="menu_perfil flex-30">
+      <a href="Perfil.html" class="texto menu_perfil_item" >Información</a>
+      <a href="perfil_metodoPago.html" class="texto menu_perfil_item" >Método de Pago</a>
+      <a href="../index.html" class="texto menu_perfil_item" onclick="cerrarSesion()">Cerrar Sesion</a>
+    </div>
+    <div class="info_perfil flex-70">
+      <div class="contenido_usuario flex" id="contentInfo">
+        
+      </div>
+    </div>
+  </div>
+
+  <!--Seccion de Footer-->
+  <div class="footer flex ">
+    <div class="flex-33 ">
+      <a href="indexNosotros.html" class="footer_item">Nosotros</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="contacto.html" class="footer_item">Contacto</a>
+    </div>
+  </div>
+
+  <script src="../JS/Pefil.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+ul {
+    list-style: none;
+}
+
+.containerPelicula {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedorMainPelicula {
+    flex-direction: row;
+    margin: 0;
+}
+
+.flex-30 {
+    flex: 0 0 30%;
+}
+
+.flex-70 {
+    flex: 0 0 50%;
+}
+.flex-70P {
+    flex: 0 0 70%;
+}
+.imgPelicula {
+    width: 90%;
+    padding: 10%;
+}
+
+.capaDosImg {
+    align-items: center;
+}
+
+.capaTresInfo {
+    margin: 7%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    background-color: white;
+    opacity: 70%;
+    border-radius: 40px 0px 62px 0px;
+}
+
+.infoPelicula {
+    justify-content: center;
+}
+
+.infoDos {
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horario {
+    text-align: center;
+    display: inline;
+    width: auto;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: rgb(170, 170, 170);
+}
+
+.descripPelicula {
+    justify-content: center;
+    text-align: justify;
+
+}
+.contenedorBuscadores{
+    /*position: fixed;
+    min-height: 120px;
+    width: 252px;
+    text-align: center;
+    word-wrap: break-word;*/
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    border-right: 1px solid white;
+}

@@ -1,0 +1,166 @@
+/*Estas son variables en CSS para comodidad :)*/
+:root {
+  --backgorundC-header: #000e5E;
+  --backgroudC-footer: gray;
+  --tipo-letra: 'Roboto', sans-serif;
+  --color-titulo1: #000000;
+  --color-letrafooter: #ffffff;
+  --tamano-texto: 20;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /*background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+*/
+}
+.fondoBody{
+  background-image: url(../IMG/image\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-menu);
+}
+
+p {
+  font-family: var(--familia-font-p);
+}
+
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex_30 {
+  flex: 0 0 30%;
+}
+
+.flex_70 {
+  flex: 0 0 60%;
+}
+
+.flex-33 {
+  flex: 0 0 30%;
+}
+
+.flex-20 {
+  flex: 0 0 20%;
+}
+
+.flex-80 {
+  flex: 0 0 80%;
+}
+
+.header {
+  background-color: var(--backgorundC-header);
+}
+.header_admin {
+  background-color: #010b42;
+}
+.logo {
+  width: 80%;
+  padding: 10px;
+}
+
+.menu {
+  text-align: right;
+  padding-top: 70px;
+}
+
+.menu_item {
+  color: #ffffff;
+  padding: 15px;
+  margin-right: 0;
+  font-family: var(--tipo-letra);
+  font-size: var(--tamano-texto);
+}
+
+.ingresar {
+  margin-top: 0;
+}
+
+.login {
+  position: absolute;
+  right: 13px;
+  top: 5px;
+  font-size: larger;
+}
+
+.img_carousel {
+  width: 100%;
+  height: 80%;
+}
+
+.titulo {
+  font-family: var(--tipo-letra);
+  color: var(--color-titulo1);
+  text-align: center;
+  padding: 10px;
+}
+
+.texto {
+  font-family: var(--tipo-letra);
+  font-size: var(--tamano-texto);
+  color: #000000;
+}
+.titulo-blanco {
+  font-family: var(--tipo-letra);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.texto-blanco {
+  font-family: var(--tipo-letra);
+  font-size: var(--tamano-texto);
+  color: white;
+}
+
+.peliculas {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu_pelicula {
+  padding: 20px;
+}
+
+.img_pelicula {
+  width: 300px;
+  height: 350px;
+}
+
+.nombre_pelicula {
+  padding: 10px;
+  text-align: center;
+  font-family: var(--tipo-letra);
+  color: var(--color-titulo1);
+  font-size: var(--tamano-texto);
+}
+
+.footer {
+  background-color: var(--backgroudC-footer);
+  padding: 30px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.footer_item {
+  color: var(--color-letrafooter);
+  font-family: var(--tipo-letra);
+  font-size: 16;
+}
+.contentCarousel{
+  height: 75%;
+  width: 100%;
+}
+.contentPeli{
+  margin-top: -60px;
+}

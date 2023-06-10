@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crear Usuario</title>
+    <!--Link de css para el css-->
+    <link rel="stylesheet" type="text/css" href="../CSS/styleCrearU.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+    <!--Links de google fonts tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <!--Link de bootstrap para carousel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="header flex">
+        <div class="flex_30">
+            <img src="../IMG/LogoEmpresa.png" class="logo">
+        </div>
+        <div class="login flex">
+            <a href="perfil.html" class="menu_item login">Ingresar</a>
+        </div>
+        <div class="flex_70 menu">
+            <a href="../index.html" class="menu_item">Inicio</a>
+            <a href="cines.html" class="menu_item">Cines</a>
+            <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
+        </div>
+    </div>
+
+
+    <div class="contenedor">
+        <h3 class="titulo">Crear Usario</h3>
+
+        <form class="formCont flex" action="" onsubmit="return registrar()">
+            <div class="formIzq">
+                <div class="itemContenedor">
+                    <label class="texto">Cedula</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Nombre</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Apelildos</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Correo Electronico</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Fecha de nacimiento</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Contraseña</label>
+                </div>
+                <div class="itemContenedor">
+                    <label class="texto">Confirmar contraseña</label>
+                </div>
+            </div>
+
+
+            <div class="formDere">
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" id="cedula" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" id="nombre" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" id="apellidos" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" id="correo" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="date" id="fecha" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="password" id="contraPri" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="password" id="contraSeg" required />
+                </div>
+
+            </div>
+
+            <div class="itemContenedor flex btn_contenedor">
+                <input class="boton" type="submit" name="Enviar" />
+                <button class="boton" onclick="limpiar()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <!--Seccion de Footer-->
+    <div class="footer flex ">
+        <div class="flex-33 ">
+            <a href="indexNosotros.html" class="footer_item">Nosotros</a>
+        </div>
+        <div class="flex-33 ">
+            <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+        </div>
+        <div class="flex-33 ">
+            <a href="contacto.html" class="footer_item">Contacto</a>
+        </div>
+    </div>
+
+    <script src="../JS/registroUser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,22 @@
+table tr td {
+  position: relative;
+  min-height: 35px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  line-height: 35px;
+  vertical-align: middle;
+  border: 1px solid #000;
+  text-align: left;
+}

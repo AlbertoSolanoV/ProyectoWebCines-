@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <!--Links de google fonts tipo de letra-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <!--Link de css para el css-->
+  <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/primerapartecompra.css">
+
+  <title>Compras de tiquetes</title>
+</head>
+
+<body>
+  <div class="header flex">
+    <div class="flex_30">
+      <img src="../IMG/LogoEmpresa.png" class="logo">
+    </div>
+    <div class="login flex">
+      <a href="login.html" class="menu_item login" id="userid">Ingresar</a>
+    </div>
+    <div class="flex_70 menu">
+      <a href="../index.html" class="menu_item">Inicio</a>
+      <a href="cines.html" class="menu_item">Cines</a>
+      <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
+    </div>
+  </div>
+  <!--Contenido-->
+  <div class="conetendor_principal flex">
+    <div class="flex_30">
+      <h1 class="titulo">Compra de entradas</h1>
+    </div>
+    <div class="flex_70 contenido">
+      <div class="content_header flex">
+        <div class="bordes">
+          <ul class="infoDos">
+            <li class="texto" id="clasificacion"></li>
+            <li class="texto" id="tipo"></li>
+            <li class="texto" id="duracion"></li>
+            <li class="peliUnoInfo texto">Horario:</li>
+            <li class="horario texto" id="horario"></li>
+          </ul>
+        </div>
+        <div class="infoDos bordes">
+          <p class="texto">Subtotal</p>
+          <p class="texto" id="total">₡ 0</p>
+        </div>
+      </div>
+
+      <div class="flex table">
+        <table>
+          <tr>
+            <td>
+              <h3>Edades</h3>
+            </td>
+            <td>
+              <h3>Cantida</h3>
+            </td>
+            <td>
+              <h3>Costo</h3>
+            </td>
+            <td>
+              <h3>Subtotal</h3>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td class="edad">3 ERA EDAD</td>
+            <td>
+              <div class="spinner" class="wrapper spinner">
+                <span type="button" class="decrease" onclick="terceraedad('menos')">-</span>
+
+                <span id="numtercera" type="button" class="increase">0</span>
+
+                <span class="increase" onclick=" terceraedad('mas')" disabled='disabled'>+
+                </span>
+              </div>
+            </td>
+            <td class="edad">2,600</td>
+            <td id="totter">0<label for=""></label></td>
+          </tr>
+
+
+          <tr>
+            <td class="edad">Adulto</td>
+            <td>
+              <div class="spinner">
+                <span type="button" class="decrease" onclick="adulto('menos')">-</span>
+
+                <span type="button" class="increase" id="adultonum">0</span>
+
+                <span class="increase" disabled="disabled" onclick="adulto('mas')">+</span>
+            </td>
+            <td class="edad">3,300</td>
+            <td id="totad">0</td>
+          </tr>
+
+
+          <tr>
+            <td class="edad">NIÑO</td>
+            <td>
+              <div class="spinner">
+                <span type="button" class="decrease" onclick="ninoedad('menos')">-</span>
+
+                <span type="button" class="increase" id="numnino">0</span>
+
+                <span class="increase" disabled="disabled" onclick="ninoedad('mas')">+
+                </span>
+            </td>
+            <td class="edad">2,600</td>
+            <td id="totnin">0</td>
+          </tr>
+
+        </table>
+      </div>
+      <div class="btn">
+        <a href="butacas.html"><button class="boton" onclick="return continuar()">Continuar a ver Butacas</button></a>
+      </div>
+    </div>
+  </div>
+  <!--Seccion de Footer-->
+  <div class="footer flex ">
+    <div class="flex-33 ">
+      <a href="indexNosotros.html" class="footer_item">Nosotros</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="contacto.html" class="footer_item">Contacto</a>
+    </div>
+  </div>
+  
+  <script src="../JS/compratiquete.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+
+</html>

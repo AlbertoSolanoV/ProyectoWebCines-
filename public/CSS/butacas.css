@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+*{
+box-sizing: border-box;
+}
+.body {
+    background-color: #242333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+.movie-container{
+    margin: 20px 0;
+}
+
+.movie.container select{
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.seat{
+    background-color: #444451;
+    height: 18px;
+    width: 25px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.textoBlanco{
+    color: #ffffff;
+}
+.seat.selected {
+    background-color: green;
+}
+
+.seat.sold{
+    background-color: rgb(245, 12, 12);
+}
+
+.seat:nth-of-tupe(2){
+    margin-left: 18px;
+}
+
+.seat:nth-last-of-type(2){
+    margin-left: 18px;
+}
+
+.seat:not(.sold):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showca.seat:not(.sold):hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase .seat:not(.sold):hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.shoecase{
+    background: rgba(0,0,0,0,1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between
+}
+
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small{
+    margin-left: 2px;
+}
+
+.row {
+    display: flex;
+
+}
+.screen{
+    text-align: center;
+    background-color: #fff;
+    height: 50px;
+    width: 100px;
+    margin: 15px ;
+    transform: rotateX(-48deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text{
+    margin: 5px 0;
+}
+p.text span{
+    color: green;
+}
+.content_header {
+    justify-content: space-around;
+    margin: 10px;
+}
+.infobutacas{
+
+}
+.butacas{
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.bordes {
+    border: 1px solid gray;
+}
+.boton{
+    text-align: center;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+}
+.btn{
+    text-align: center;
+    margin: 20px;
+}
+.infoDos {
+    float: left;
+    margin: 4%;
+    margin-top: 5%;
+    width: 150px;
+}
+.peliUnoInfo {
+    margin-bottom: 8%;
+}
+.horario {
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: rgb(170, 170, 170)
+}

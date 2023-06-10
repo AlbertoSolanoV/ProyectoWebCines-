@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+
+  <!--Links de google fonts tipo de letra-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <!--Link de css para el css-->
+  <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/styleAdminUsers.css">
+  <title>Administrador Usuarios</title>
+
+
+</head>
+
+
+
+<body>
+  <div class="header_admin flex">
+    <div class="flex_30">
+      <img src="../IMG/LogoEmpresa.png" class="logo">
+    </div>
+    <div class="flex_70 menu">
+      <a href="login.html" class="menu_item " id="userid">Ingresar</a>
+    </div>
+  </div>
+
+  <div class="flex">
+    <div class="capaDos flex-20 ">
+      <nav>
+        <ul id="menuAdmin">
+          <li><a class="texto" href="adminUsuarios.html"> Informe y estadísticas</a></li>
+          <li><a class="texto" href="margen.html"> Margen de ganancias</a></li>
+          <li><a class="texto" href="adminCadenasCines.html"> Cadenas de cine</a></li>
+          <li><a class="texto" href="Adminsalas.html"> Disponibilidad de espacios</a></li>
+          <li><a class="texto" href="carteleraAdministrador.html"> Cartelera</a></li>
+          <li><a class="texto" href="adminColaboradores.html"> Colaboradores</a></li>
+        </ul>
+      </nav> 
+    </div>
+    <div class="flex-80">
+      <div class="contenido">
+        <h1 class="titulo">Últimos Usuarios Creados</h1>
+        <table id="tarjetaListas" class="tabla">
+            <thead>
+              <tr class="">
+                <th class="texto">Nombre</th>
+                <th class="texto">Correo</th>
+                <th class="texto">Edad</th>
+              </tr>
+            </thead>
+            <tbody id="tableBodyUsuarios">
+
+            </tbody>
+            
+          </table>
+       
+      </div>
+      <div class="contenido">
+        <h1 class="titulo">Últimas Películas Creadas</h1>
+        <table id="tarjetaListas" class="tabla">
+          <thead>
+            <tr class="">
+              <th class="texto">Nombre</th>
+              <th class="texto">Categoria</th>
+              <th class="texto">Clasificacion</th>
+              <th class="texto">Duracion</th>
+            </tr>
+          </thead>
+          <tbody id="tableBodyPeliculas">
+
+          </tbody>
+          
+        </table>
+      </div>
+      <div class="contenido">
+        <h1 class="titulo">Últimas Carteleras Creados</h1>
+
+        <table id="tarjetaListas" class="tabla">
+          <thead> 
+            <tr class="">
+              <th class="texto">Código</th>
+              <th class="texto">Película</th>
+              <th class="texto">Horario</th>
+              <th class="texto">Fecha Inicio</th>
+              <th class="texto">Fecha Inicio</th>
+            </tr>
+          </thead>
+          <tbody id="tableBodyCartelera">
+
+          </tbody>
+          
+        </table>
+        
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--Seccion de Footer-->
+  <div class="footer flex ">
+    <div class="flex-33 ">
+      <a href="indexNosotros.html" class="footer_item">Nosotros</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="contacto.html" class="footer_item">Contacto</a>
+    </div>
+  </div>
+<script src="../JS/listarAdmin.js"></script>
+</body>
+
+</html>

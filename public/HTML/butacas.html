@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <!--Links de google fonts tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <!--Link de css para el css-->
+    <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/butacas.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="width=divice-width, initial-scale=1.0">
+    <title>Butacas</title>
+</head>
+
+<body>
+    <div class="header flex">
+        <div class="flex_30">
+            <img src="../IMG/LogoEmpresa.png" class="logo">
+        </div>
+        <div class="login flex">
+            <a href="login.html" class="menu_item login" id="userid">Ingresar</a>
+        </div>
+        <div class="flex_70 menu">
+            <a href="../index.html" class="menu_item">Inicio</a>
+            <a href="cines.html" class="menu_item">Cines</a>
+            <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
+        </div>
+    </div>
+    <!--Contenido-->
+
+    <div class="conetendor_principal flex">
+        <div class="flex_30">
+            <h1 class="titulo">Compra de entradas</h1>
+        </div>
+        <div class="flex_70 contenido">
+            <div class="content_header flex">
+                <div class="bordes">
+                    <ul class="infoDos">
+                        <li class="texto" id="clasificacion"></li>
+                        <li class="texto" id="tipo"></li>
+                        <li class="texto" id="duracion"></li>
+                        <li class="peliUnoInfo texto">Horario:</li>
+                        <li class="horario texto" id="horario"></li>
+                    </ul>
+                </div>
+                <div class="infoDos bordes">
+                    <p class="texto">Subtotal</p>
+                    <p class="texto" id="total">₡ 0</p>
+                </div>
+            </div>
+
+            <div class="butacas flex">
+                <div class="infobutacas">
+                    <ul class="showcase">
+                        <li>
+                            <div class="seat"></div>
+                            <small class="texto">Disponible</small>
+                        </li>
+                        <li>
+                            <div class="seat selected"> </div>
+                            <small class="texto">Selecionado</small>
+                        </li>
+                        <li>
+                            <div class="seat sold"></div>
+                            <small class="texto">Vendido</small>
+                        </li>
+                    </ul>
+                </div>
+                <form action="" onsubmit="return reservarCampos()">
+                <div class="container" id="contentButacas">
+                    <div class="screen texto">Pantalla</div>
+                    <p class="text">Ha seleccionado los asientos: </p>
+                </div>
+
+
+            </div>
+
+            <div class="btn">
+                    <input type="submit" class="boton" value="Continuar con el proceso de compra">
+                
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Seccion de Footer-->
+    <div class="footer flex ">
+        <div class="flex-33 ">
+            <a href="indexNosotros.html" class="footer_item">Nosotros</a>
+        </div>
+        <div class="flex-33 ">
+            <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+        </div>
+        <div class="flex-33 ">
+            <a href="contacto.html" class="footer_item">Contacto</a>
+        </div>
+    </div>
+    <script src="../JS/butacas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+</body>
+
+</html>

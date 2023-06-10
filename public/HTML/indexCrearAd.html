@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crear Usuario por administrador</title>
+    <!--Link de css para el css-->
+    <link rel="stylesheet" type="text/css" href="../CSS/styleCrearA.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/styleprincipal.css">
+    <!--Links de google fonts tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header flex">
+        <div class="flex_30">
+            <img src="../IMG/LogoEmpresa.png" class="logo">
+        </div>
+        <div class="login flex">
+            <a href="perfil.html" class="menu_item login" id="userid">Ingresar</a>
+        </div>
+        <div class="flex_70 menu">
+            <a href="../index.html" class="menu_item">Inicio</a>
+            <a href="cines.html" class="menu_item">Cines</a>
+            <a href="misBoletos.html" class="menu_item">Mis Boletos</a>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <h1 class="titulo">Crear Usario por el administrador</h1>
+
+        <form class="formCont flex" action="" onsubmit="return registrar()">
+            <div class="formIzq">
+                <div class="itemContenedor">
+                    <label for="cedula1" class="texto">Cédula</label>
+                </div>
+                <div class="itemContenedor">
+                    <label for="correo" class="texto">Correo Electronico</label>
+                </div>
+                <div class="itemContenedor">
+                    <label for="nombre" class="texto">Nombre</label>
+                </div>
+                <div class="itemContenedor">
+                    <label for="apellidos" class="texto">Apellidos</label>
+                </div>
+
+
+                <div class="itemContenedor">
+                    <label for="edad" class="texto">Fecha de nacimiento</label>
+                </div>
+
+            </div>
+            <div class="formDere">
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" name="usuario1" id="cedula" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="email" name="direccion" id="correo" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" name="nombre1" id="nombre" required />
+                </div>
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="text" name="apellido1" id="apellido" required />
+                </div>
+
+                <div class="itemContenedorInput">
+                    <input class="inputSm" type="date" name="edadC" id="fecha" required />
+                </div>
+             </div>
+
+            <div class="select">
+                <p class="texto"> <strong> Seleccione el rol del nuevo usuario </strong> </p>
+
+                <div class="itemContenedor flex contenedor_tipo">
+                    <div class="contenedor_tipo">
+                        <input type="radio" id="usuarioC" name="usuario" onclick="clienteNormal()">
+                        <labe class="texto">Usuario cliente</label>
+                    </div>
+                    <div class="contenedor_tipo">
+                        <input type="radio" id="jefeS" name="usuario" onclick="jefesSoporte()">
+                        <label class="texto">Usuario Jefe de Soporte</label>
+                    </div>
+                </div>
+                <div class="itemContenedor contenedorLista flex">
+                    <label for="" class="texto" >Cines: </label>
+                    <input id="cineInput" type="text" list="cines" >
+                    <datalist id="cines">
+
+                    </datalist>
+                </div>
+            </div>
+            <div class="itemContenedor flex btn_contenedor">
+                <input class="boton" type="submit" name="Enviar"  />
+            </div>
+        </form>
+    </div>
+    <!--Seccion de Footer-->
+    <div class="footer flex ">
+        <div class="flex-33 ">
+            <a href="indexNosotros.html" class="footer_item">Nosotros</a>
+        </div>
+        <div class="flex-33 ">
+            <a href="indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+        </div>
+        <div class="flex-33 ">
+            <a href="contacto.html" class="footer_item">Contacto</a>
+        </div>
+    </div>
+
+    <script src="../JS/registroUserAdmin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,93 @@
+<html>
+
+<head>
+  <!--Links de google fonts tipo de letra-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <!--Link de bootstrap para carousel-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!--Link de css para el css-->
+  <link rel="stylesheet" type="text/css" href="CSS/styleprincipal.css">
+  <title>Inicio </title>
+</head>
+
+<body>
+  <div class="header flex">
+    <div class="flex_30">
+      <img src="IMG/LogoEmpresa.png" class="logo">
+    </div>
+    <div class="login flex">
+      <a href="HTML/login.html" class="menu_item login" id="userid">Ingresar</a>
+    </div>
+    <div class="flex_70 menu">
+      <a href="index.html" class="menu_item">Inicio</a>
+      <a href="HTML/cines.html" class="menu_item">Cines</a>
+      <a href="HTML/misBoletos.html" class="menu_item">Mis Boletos</a>
+    </div>
+  </div>
+  <!--Carousel-->
+  <div class="contentCarousel">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" id="carrouselCines">
+        <div class="carousel-item active">
+          <img src="IMG/Cines/novacinemas.jpg" class="d-block w-100 img_carousel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="IMG/Cines/cinepolis.jpg" class="d-block w-100 img_carousel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="IMG/Cines/cinemark.jpg" class="d-block w-100 img_carousel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="IMG/Cines/Cinemagaly.jpg" class="d-block w-100 img_carousel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="IMG/Cines/ccm.png" class="d-block w-100 img_carousel" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </button>
+    </div>
+  </div>
+
+  <!--Seccion de estrenos de peliculas-->
+  <div class="contentPeli">
+    <h1 class="titulo">Estrenos de Peliculas</h1>
+    <div class="peliculas flex" id="peliEstrenos">
+
+    </div>
+  </div>
+  <!--Seccion de Footer-->
+  <div class="footer flex">
+    <div class="flex-33 ">
+      <a href="HTML/indexNosotros.html" class="footer_item">Nosotros</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="HTML/indexPoliticas.html" class="footer_item">Condiciones de uso y politicas</a>
+    </div>
+    <div class="flex-33 ">
+      <a href="HTML/contacto.html" class="footer_item">Contacto</a>
+    </div>
+  </div>
+
+  <!--Scripts para el Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+  </script>
+
+  <!--Script del javascript-->
+  <script src="JS/Inicio.js"></script>
+</body>
+
+</html>
